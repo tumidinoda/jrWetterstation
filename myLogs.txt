@@ -2651,3 +2651,21 @@ Aktuelle Temperatur: 21.0 Minimum: 20.0 Maximum: 23.0 2016-11-15 14:29:47.892725
 Aktuelle Temperatur: 21.5 Minimum: 20.0 Maximum: 23.0 2016-11-15 14:37:15.242375
 Aktuelle Temperatur: 23.4 Minimum: 23.4 Maximum: 23.4 2016-11-15 14:55:32.736624
 Aktuelle Temperatur: 22.9 Minimum: 22.9 Maximum: 23.4 2016-11-15 15:03:56.775286
+------------------------------
+KY-053 Sensor nicht erkannt!
+Ueberpruefen Sie die Verbindungen
+------------------------------
+Traceback (most recent call last):
+  File "/home/robert/jrWetterstation/projektWetterstation.py", line 9, in <module>
+    ky053 = KY053()
+  File "/home/robert/jrWetterstation/KY053_Sensor.py", line 29, in __init__
+    time.sleep(1)
+KeyboardInterrupt
+Aktuelle Temperatur: 21.3 Minimum: 21.3 Maximum: 21.3 Druck: 997.25 2016-11-17 20:20:06.057878
+/home/robert/jrWetterstation/projektWetterstation.py:24: RuntimeWarning: No channels have been set up yet - nothing to clean up!  Try cleaning up at the end of your program instead!
+  GPIO.cleanup()
+Aktuelle Temperatur: 21.2 Minimum: 21.2 Maximum: 21.2 Druck: 997.37 2016-11-17 20:21:31.214628
+Aktuelle Temperatur: 25.0 Minimum: 21.2 Maximum: 25.0 Druck: 997.43 2016-11-17 20:22:52.496061
+Aktuelle Temperatur: 22.9 Minimum: 21.2 Maximum: 25.0 Druck: 997.46 2016-11-17 20:23:03.154732
+Aktuelle Temperatur: 22.3 Minimum: 21.2 Maximum: 25.0 Druck: 997.5 2016-11-17 20:23:13.821096
+Aktuelle Temperatur: 21.8 Minimum: 21.2 Maximum: 25.0 Druck: 997.48 2016-11-17 20:23:34.502343

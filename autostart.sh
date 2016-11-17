@@ -1,3 +1,3 @@
 #!/bin/bash
 sleep 30
-/usr/bin/python -u /home/pi/Robert/Wetterstation/projektWetterstation.py>>/home/pi/Robert/Wetterstation/myLogs.txt 2>&1
+sudo /usr/bin/python -u /home/robert/jrWetterstation/projektWetterstation.py>>/home/robert/jrWetterstation/myLogs.txt 2>&1 &

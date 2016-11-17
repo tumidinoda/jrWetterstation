@@ -11,10 +11,11 @@ class Mail():
         self.user='robert.jonas@gmx.at'
         self.pw='Seyring4'
 #=======================================================================================================================
-    def send(self,actTemp,minTemp,maxTemp):
+    def send(self,actTemp,minTemp,maxTemp,actPress):
         inhalt='Aktuelle Temperatur: '+str(actTemp)
         inhalt+=' Minimum: '+str(minTemp)
         inhalt+=' Maximum: '+str(maxTemp)
+	inhalt+=' Druck: '+str(actPress)
         inhalt+=' '+str(datetime.now())
         
         text='From: '+self.adress+'\n'
