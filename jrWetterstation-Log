@@ -114,3 +114,18 @@
 161118-181419-KY053_Sensor-31-DEBUG-KY-053 sensor not detected. Check wiring. Try again in: 27 seconds
 161118-181446-KY053_Sensor-26-DEBUG-BMP085 initialisieren
 161118-181446-KY053_Sensor-31-DEBUG-KY-053 sensor not detected. Check wiring. Try again in: 81 seconds
+161118-183812-KY053_Sensor-19-DEBUG-KY053 constructor started
+161118-183812-KY053_Sensor-26-DEBUG-BMP085 initialisieren
+161118-183812-KY053_Sensor-29-DEBUG-KY-053 sensor successful created
+161118-183812-KY053_Sensor-41-DEBUG-KY053 constructor ended
+161118-183915-jrWetterstation-44-DEBUG-Program stopped by keyboard interupt
+161118-184420-KY053_Sensor-19-DEBUG-KY053 constructor started
+161118-184420-KY053_Sensor-26-DEBUG-BMP085 initialisieren
+161118-184420-KY053_Sensor-29-DEBUG-KY-053 sensor successful created
+161118-184420-KY053_Sensor-41-DEBUG-KY053 constructor ended
+161118-184453-KY053_Sensor-19-DEBUG-KY053 constructor started
+161118-184453-KY053_Sensor-26-DEBUG-BMP085 initialisieren
+161118-184453-KY053_Sensor-29-DEBUG-KY-053 sensor successful created
+161118-184453-KY053_Sensor-41-DEBUG-KY053 constructor ended
+161118-184453-KY053_Sensor-56-INFO-Temp: 21.2 Druck: 990.24
+161118-184557-jrWetterstation-44-DEBUG-Program stopped by keyboard interupt

@@ -53,6 +53,7 @@ class KY053_Sensor:
         if (self.actTemp<self.minTemp): self.minTemp=self.actTemp
         if (self.actTemp>self.maxTemp): self.maxTemp=self.actTemp
         if (self.actTemp > self.lastTemp-0.5) and (self.actTemp < self.lastTemp+0.5) : return
+        self.myLogger.info('Temp: '+str(self.actTemp)+' Druck: '+str(self.actPress))
 #        print str(datetime.now())," Act:",self.actTemp,"last:",self.lastTemp
         self.lastTemp=self.actTemp
 
