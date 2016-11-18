@@ -24,7 +24,7 @@ myLogger.addHandler(handler)
 
 #===============================================================================
 #define global variables
-sleepTime = 10
+sleepTime = 5
 #temp = Temperatur()
 ky053 = KY053()   #KY053 Sensor instance created
 #===============================================================================
