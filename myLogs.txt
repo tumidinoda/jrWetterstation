@@ -2669,3 +2669,35 @@ Aktuelle Temperatur: 25.0 Minimum: 21.2 Maximum: 25.0 Druck: 997.43 2016-11-17 2
 Aktuelle Temperatur: 22.9 Minimum: 21.2 Maximum: 25.0 Druck: 997.46 2016-11-17 20:23:03.154732
 Aktuelle Temperatur: 22.3 Minimum: 21.2 Maximum: 25.0 Druck: 997.5 2016-11-17 20:23:13.821096
 Aktuelle Temperatur: 21.8 Minimum: 21.2 Maximum: 25.0 Druck: 997.48 2016-11-17 20:23:34.502343
+Aktuelle Temperatur: 21.3 Minimum: 21.2 Maximum: 25.0 Druck: 997.4 2016-11-17 20:27:35.931884
+Aktuelle Temperatur: 22.5 Minimum: 21.2 Maximum: 25.0 Druck: 997.38 2016-11-17 21:06:54.623361
+Aktuelle Temperatur: 21.8 Minimum: 21.2 Maximum: 25.0 Druck: 997.35 2016-11-17 21:07:05.369641
+Aktuelle Temperatur: 21.3 Minimum: 21.2 Maximum: 25.0 Druck: 997.33 2016-11-17 21:11:06.764610
+Aktuelle Temperatur: 78.7 Minimum: 20.9 Maximum: 78.7 Druck: 993.98 2016-11-18 06:36:31.560426
+Aktuelle Temperatur: 21.0 Minimum: 20.9 Maximum: 78.7 Druck: 994.02 2016-11-18 06:36:42.190938
+Aktuelle Temperatur: 78.8 Minimum: 20.9 Maximum: 78.8 Druck: 1201.6 2016-11-18 06:43:04.019888
+Aktuelle Temperatur: 21.0 Minimum: 20.9 Maximum: 78.8 Druck: 993.99 2016-11-18 06:43:14.627295
+Aktuelle Temperatur: 78.7 Minimum: 20.9 Maximum: 78.8 Druck: 992.6 2016-11-18 11:55:17.823442
+Traceback (most recent call last):
+  File "/home/robert/jrWetterstation/projektWetterstation.py", line 19, in <module>
+    ky053.save()
+  File "/home/robert/jrWetterstation/KY053_Sensor.py", line 59, in save
+    myMail.send(self.actTemp,self.minTemp,self.maxTemp,self.actPress)
+  File "/home/robert/jrWetterstation/Mail.py", line 29, in send
+    server=smtplib.SMTP_SSL(self.smtpserver)
+  File "/usr/lib/python2.7/smtplib.py", line 797, in __init__
+    SMTP.__init__(self, host, port, local_hostname, timeout)
+  File "/usr/lib/python2.7/smtplib.py", line 256, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/lib/python2.7/smtplib.py", line 316, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/lib/python2.7/smtplib.py", line 802, in _get_socket
+    new_socket = socket.create_connection((host, port), timeout)
+  File "/usr/lib/python2.7/socket.py", line 553, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+socket.gaierror: [Errno -2] Name or service not known
+Aktuelle Temperatur: 21.1 Minimum: 21.1 Maximum: 21.1 Druck: 989.77 2016-11-18 15:05:23.202019
+Aktuelle Temperatur: 78.4 Minimum: 21.1 Maximum: 78.4 Druck: 989.84 2016-11-18 15:38:30.532995
+Aktuelle Temperatur: 21.1 Minimum: 21.1 Maximum: 78.4 Druck: 989.84 2016-11-18 15:38:41.602208
+Aktuelle Temperatur: 108.5 Minimum: 21.1 Maximum: 108.5 Druck: 534.8 2016-11-18 17:43:46.433795
+Aktuelle Temperatur: 21.1 Minimum: 21.1 Maximum: 108.5 Druck: 989.66 2016-11-18 17:43:57.048670

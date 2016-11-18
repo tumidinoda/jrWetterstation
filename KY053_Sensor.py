@@ -3,6 +3,7 @@ import Adafruit_BMP.BMP085 as BMP085
 import time
 import sqlite3 as sql
 import sys
+import logging
 from datetime import datetime
 from Mail import Mail
 
@@ -14,25 +15,34 @@ class KY053_Sensor:
         self.minTemp=99.9
         self.maxTemp=-99.9
         self.actPress=0.0
+        self.myLogger=logging.getLogger('jrWetterstationLogger')
+        self.myLogger.debug('KY053 constructor started')
 
-	try:
-		# Sensor wird initialisiert
-		self.BMPSensor = BMP085.BMP085()
-		# Ueberpruefung ob Sensor richtig angeschlossen ist
-		# Falls nicht, wird eine Fehlermeldung ausgegeben
-	except IOError:
-		print("------------------------------")
-		print ("KY-053 Sensor nicht erkannt!")
-		print ("Ueberpruefen Sie die Verbindungen")
-		print("------------------------------")
-		while(True):
-			time.sleep(1)
-	except KeyboardInterrupt:
-		GPIO.cleanup()
+        sleeptime=1 #sec 
+        success=False
+        while not success:
+            try:
+                # Sensor wird initialisiert
+                self.myLogger.debug('BMP085 initialisieren')
+                self.BMPSensor = BMP085.BMP085()
+                success=True
+                self.myLogger.debug('KY-053 sensor successful created')
+            except IOError:
+                self.myLogger.debug('KY-053 sensor not detected. Check wiring. Try again in: '+str(sleeptime)+' seconds')
+                print ("KY-053 Sensor nicht erkannt!")
+                print ("Ueberpruefen Sie die Verbindungen")
+                print ("Naechste Versuch in: "+str(sleeptime)+" Sekunden")
+                time.sleep(sleeptime)
+                sleeptime*=3
+            except KeyboardInterrupt:
+                self.myLogger.debug('Program stopped by keyboard interupt')
+                GPIO.cleanup()
+
+        self.myLogger.debug('KY053 constructor ended')
 #=======================================================================================================================
     def read(self):
-		self.actTemp=self.BMPSensor.read_temperature()
-		self.actPress=self.BMPSensor.read_pressure()/100.0
+        self.actTemp=self.BMPSensor.read_temperature()
+        self.actPress=self.BMPSensor.read_pressure()/100.0
 #=======================================================================================================================
     def out(self):
         print '---------------------------------------'
