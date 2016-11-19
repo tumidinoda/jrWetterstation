@@ -274,3 +274,254 @@ Date: Fri Nov 18 22:29:27 2016
 Subject: Temperatur
 
 Aktuelle Temperatur: 21.7 Minimum: 21.4 Maximum: 25.0 2016-11-18 22:29:27.160856
+161118-224447-KY053_Sensor-64-INFO-Temp: 24.6 Druck: 993.64
+161118-224447-Mail-15-DEBUG-Mail constructor
+161118-224447-Mail-29-DEBUG-From: robert.jonas@gmx.at
+To: robert.jonas@gmx.at
+Date: Fri Nov 18 22:44:47 2016
+Subject: Temperatur
+
+Aktuelle Temperatur: 24.6 Minimum: 21.4 Maximum: 25.0 2016-11-18 22:44:47.990648
+161118-224453-KY053_Sensor-64-INFO-Temp: 25.9 Druck: 993.74
+161118-224453-Mail-15-DEBUG-Mail constructor
+161118-224453-Mail-29-DEBUG-From: robert.jonas@gmx.at
+To: robert.jonas@gmx.at
+Date: Fri Nov 18 22:44:53 2016
+Subject: Temperatur
+
+Aktuelle Temperatur: 25.9 Minimum: 21.4 Maximum: 25.9 2016-11-18 22:44:53.594251
+161118-224459-KY053_Sensor-64-INFO-Temp: 24.3 Druck: 993.75
+161118-224459-Mail-15-DEBUG-Mail constructor
+161118-224459-Mail-29-DEBUG-From: robert.jonas@gmx.at
+To: robert.jonas@gmx.at
+Date: Fri Nov 18 22:44:59 2016
+Subject: Temperatur
+
+Aktuelle Temperatur: 24.3 Minimum: 21.4 Maximum: 25.9 2016-11-18 22:44:59.184018
+161118-224504-KY053_Sensor-64-INFO-Temp: 23.5 Druck: 993.76
+161118-224504-Mail-15-DEBUG-Mail constructor
+161118-224504-Mail-29-DEBUG-From: robert.jonas@gmx.at
+To: robert.jonas@gmx.at
+Date: Fri Nov 18 22:45:04 2016
+Subject: Temperatur
+
+Aktuelle Temperatur: 23.5 Minimum: 21.4 Maximum: 25.9 2016-11-18 22:45:04.824876
+161118-224515-KY053_Sensor-64-INFO-Temp: 22.6 Druck: 993.77
+161118-224515-Mail-15-DEBUG-Mail constructor
+161118-224515-Mail-29-DEBUG-From: robert.jonas@gmx.at
+To: robert.jonas@gmx.at
+Date: Fri Nov 18 22:45:15 2016
+Subject: Temperatur
+
+Aktuelle Temperatur: 22.6 Minimum: 21.4 Maximum: 25.9 2016-11-18 22:45:15.418461
+161118-224611-KY053_Sensor-64-INFO-Temp: 22.0 Druck: 993.81
+161118-224611-Mail-15-DEBUG-Mail constructor
+161118-224611-Mail-29-DEBUG-From: robert.jonas@gmx.at
+To: robert.jonas@gmx.at
+Date: Fri Nov 18 22:46:11 2016
+Subject: Temperatur
+
+Aktuelle Temperatur: 22.0 Minimum: 21.4 Maximum: 25.9 2016-11-18 22:46:11.512190
+161118-225038-KY053_Sensor-64-INFO-Temp: 21.4 Druck: 993.8
+161118-225038-Mail-15-DEBUG-Mail constructor
+161118-225038-Mail-29-DEBUG-From: robert.jonas@gmx.at
+To: robert.jonas@gmx.at
+Date: Fri Nov 18 22:50:38 2016
+Subject: Temperatur
+
+Aktuelle Temperatur: 21.4 Minimum: 21.4 Maximum: 25.9 2016-11-18 22:50:38.656972
+161118-225552-KY053_Sensor-23-DEBUG-KY053 constructor started
+161118-225552-KY053_Sensor-30-DEBUG-BMP085 initialisieren
+161118-225552-KY053_Sensor-33-DEBUG-KY-053 sensor successful created
+161118-225552-KY053_Sensor-45-DEBUG-KY053 constructor ended
+161118-225552-KY053_Sensor-76-DEBUG-Temperatur jitter: actTemp: 21.4 lastTemp: -99.0
+161118-225552-KY053_Sensor-83-INFO-Temp: 21.4 Druck: 993.86
+161118-225552-Mail-15-DEBUG-Mail constructor
+161118-225552-Mail-48-DEBUG-From: robert.jonas@gmx.at
+To: robert.jonas@gmx.at
+Date: Fri Nov 18 22:55:52 2016
+Subject: Druck
+
+Aktueller Druck: 993.86 Minimum: 993.86 Maximum: 993.86 2016-11-18 22:55:52.755023
+161118-235132-KY053_Sensor-83-INFO-Temp: 21.2 Druck: 994.87
+161118-235132-Mail-15-DEBUG-Mail constructor
+161118-235132-Mail-48-DEBUG-From: robert.jonas@gmx.at
+To: robert.jonas@gmx.at
+Date: Fri Nov 18 23:51:32 2016
+Subject: Druck
+
+Aktueller Druck: 994.87 Minimum: 993.8 Maximum: 994.87 2016-11-18 23:51:32.867108
+161119-012114-KY053_Sensor-83-INFO-Temp: 21.0 Druck: 995.88
+161119-012114-Mail-15-DEBUG-Mail constructor
+161119-012114-Mail-48-DEBUG-From: robert.jonas@gmx.at
+To: robert.jonas@gmx.at
+Date: Sat Nov 19 01:21:14 2016
+Subject: Druck
+
+Aktueller Druck: 995.88 Minimum: 993.8 Maximum: 995.88 2016-11-19 01:21:14.786782
+161119-044230-KY053_Sensor-83-INFO-Temp: 21.1 Druck: 994.87
+161119-044230-Mail-15-DEBUG-Mail constructor
+161119-044230-Mail-48-DEBUG-From: robert.jonas@gmx.at
+To: robert.jonas@gmx.at
+Date: Sat Nov 19 04:42:30 2016
+Subject: Druck
+
+Aktueller Druck: 994.87 Minimum: 993.8 Maximum: 996.07 2016-11-19 04:42:30.814004
+161119-071735-KY053_Sensor-83-INFO-Temp: 21.2 Druck: 993.86
+161119-071735-Mail-15-DEBUG-Mail constructor
+161119-071735-Mail-48-DEBUG-From: robert.jonas@gmx.at
+To: robert.jonas@gmx.at
+Date: Sat Nov 19 07:17:35 2016
+Subject: Druck
+
+Aktueller Druck: 993.86 Minimum: 993.8 Maximum: 996.07 2016-11-19 07:17:35.601880
+161119-083608-KY053_Sensor-83-INFO-Temp: 21.3 Druck: 992.84
+161119-083608-Mail-15-DEBUG-Mail constructor
+161119-083608-Mail-48-DEBUG-From: robert.jonas@gmx.at
+To: robert.jonas@gmx.at
+Date: Sat Nov 19 08:36:08 2016
+Subject: Druck
+
+Aktueller Druck: 992.84 Minimum: 992.84 Maximum: 996.07 2016-11-19 08:36:08.694228
+161119-090715-KY053_Sensor-64-INFO-Temp: 23.6 Druck: 992.69
+161119-090715-Mail-15-DEBUG-Mail constructor
+161119-090715-Mail-29-DEBUG-From: robert.jonas@gmx.at
+To: robert.jonas@gmx.at
+Date: Sat Nov 19 09:07:15 2016
+Subject: Temperatur
+
+Aktuelle Temperatur: 23.6 Minimum: 21.0 Maximum: 23.6 2016-11-19 09:07:15.139204
+161119-090720-KY053_Sensor-64-INFO-Temp: 22.8 Druck: 992.71
+161119-090720-Mail-15-DEBUG-Mail constructor
+161119-090720-Mail-29-DEBUG-From: robert.jonas@gmx.at
+To: robert.jonas@gmx.at
+Date: Sat Nov 19 09:07:20 2016
+Subject: Temperatur
+
+Aktuelle Temperatur: 22.8 Minimum: 21.0 Maximum: 23.6 2016-11-19 09:07:20.812327
+161119-090731-KY053_Sensor-64-INFO-Temp: 22.2 Druck: 992.64
+161119-090731-Mail-15-DEBUG-Mail constructor
+161119-090731-Mail-29-DEBUG-From: robert.jonas@gmx.at
+To: robert.jonas@gmx.at
+Date: Sat Nov 19 09:07:31 2016
+Subject: Temperatur
+
+Aktuelle Temperatur: 22.2 Minimum: 21.0 Maximum: 23.6 2016-11-19 09:07:31.418169
+161119-090822-KY053_Sensor-64-INFO-Temp: 21.6 Druck: 992.59
+161119-090822-Mail-15-DEBUG-Mail constructor
+161119-090822-Mail-29-DEBUG-From: robert.jonas@gmx.at
+To: robert.jonas@gmx.at
+Date: Sat Nov 19 09:08:22 2016
+Subject: Temperatur
+
+Aktuelle Temperatur: 21.6 Minimum: 21.0 Maximum: 23.6 2016-11-19 09:08:22.697298
+161119-100713-KY053_Sensor-83-INFO-Temp: 21.4 Druck: 991.81
+161119-100713-Mail-15-DEBUG-Mail constructor
+161119-100713-Mail-48-DEBUG-From: robert.jonas@gmx.at
+To: robert.jonas@gmx.at
+Date: Sat Nov 19 10:07:13 2016
+Subject: Druck
+
+Aktueller Druck: 991.81 Minimum: 991.81 Maximum: 996.07 2016-11-19 10:07:13.767474
+161119-102616-KY053_Sensor-64-INFO-Temp: 23.6 Druck: 991.7
+161119-102616-Mail-15-DEBUG-Mail constructor
+161119-102616-Mail-29-DEBUG-From: robert.jonas@gmx.at
+To: robert.jonas@gmx.at
+Date: Sat Nov 19 10:26:16 2016
+Subject: Temperatur
+
+Aktuelle Temperatur: 23.6 Minimum: 21.0 Maximum: 23.6 2016-11-19 10:26:16.053029
+161119-111604-KY053_Sensor-23-DEBUG-KY053 constructor started
+161119-111604-KY053_Sensor-30-DEBUG-BMP085 initialisieren
+161119-111604-KY053_Sensor-33-DEBUG-KY-053 sensor successful created
+161119-111604-KY053_Sensor-45-DEBUG-KY053 constructor ended
+161119-111604-KY053_Sensor-76-DEBUG-Temperatur jitter: actTemp: 21.3 lastTemp: -99.0
+161119-111604-KY053_Sensor-83-INFO-Temp: 21.3 Druck: 990.5
+161119-111604-Mail-15-DEBUG-Mail constructor
+161119-111604-Mail-48-DEBUG-From: robert.jonas@gmx.at
+To: robert.jonas@gmx.at
+Date: Sat Nov 19 11:16:04 2016
+Subject: Druck
+
+Aktueller Druck: 990.5 Minimum: 990.5 Maximum: 990.5 2016-11-19 11:16:04.546893
+161119-111644-jrWetterstation-49-DEBUG-Global: Program stopped by external interupt
+161119-112107-KY053_Sensor-23-DEBUG-KY053 constructor started
+161119-112107-KY053_Sensor-29-DEBUG-BMP085 initialisieren
+161119-112107-KY053_Sensor-32-DEBUG-KY-053 sensor successful created
+161119-112107-KY053_Sensor-42-DEBUG-KY053 constructor ended
+161119-112107-KY053_Sensor-73-DEBUG-Temperatur jitter: actTemp: 21.3 lastTemp: -99.0
+161119-112107-KY053_Sensor-80-INFO-Temp: 21.3 Druck: 990.39
+161119-112107-Mail-15-DEBUG-Mail constructor
+161119-112107-Mail-48-DEBUG-From: robert.jonas@gmx.at
+To: robert.jonas@gmx.at
+Date: Sat Nov 19 11:21:07 2016
+Subject: Druck
+
+Aktueller Druck: 990.39 Minimum: 990.39 Maximum: 990.39 2016-11-19 11:21:07.815640
+161119-112147-jrWetterstation-49-DEBUG-Global: Program stopped by external interrupt
+161119-112232-KY053_Sensor-23-DEBUG-KY053 constructor started
+161119-112232-KY053_Sensor-29-DEBUG-BMP085 initialisieren
+161119-112232-KY053_Sensor-32-DEBUG-KY-053 sensor successful created
+161119-112232-KY053_Sensor-42-DEBUG-KY053 constructor ended
+161119-112232-KY053_Sensor-73-DEBUG-Temperatur jitter: actTemp: 21.3 lastTemp: -99.0
+161119-112232-KY053_Sensor-80-INFO-Temp: 21.3 Druck: 990.29
+161119-112232-Mail-15-DEBUG-Mail constructor
+161119-112232-Mail-48-DEBUG-From: robert.jonas@gmx.at
+To: robert.jonas@gmx.at
+Date: Sat Nov 19 11:22:32 2016
+Subject: Druck
+
+Aktueller Druck: 990.29 Minimum: 990.29 Maximum: 990.29 2016-11-19 11:22:32.911685
+161119-112355-KY053_Sensor-23-DEBUG-KY053 constructor started
+161119-112355-KY053_Sensor-29-DEBUG-BMP085 initialisieren
+161119-112356-KY053_Sensor-32-DEBUG-KY-053 sensor successful created
+161119-112356-KY053_Sensor-42-DEBUG-KY053 constructor ended
+161119-112356-KY053_Sensor-73-DEBUG-Temperatur jitter: actTemp: 21.3 lastTemp: -99.0
+161119-112356-KY053_Sensor-80-INFO-Temp: 21.3 Druck: 990.37
+161119-112356-Mail-15-DEBUG-Mail constructor
+161119-112356-Mail-48-DEBUG-From: robert.jonas@gmx.at
+To: robert.jonas@gmx.at
+Date: Sat Nov 19 11:23:56 2016
+Subject: Druck
+
+Aktueller Druck: 990.37 Minimum: 990.37 Maximum: 990.37 2016-11-19 11:23:56.048024
+161119-112440-KY053_Sensor-23-DEBUG-KY053 constructor started
+161119-112440-KY053_Sensor-29-DEBUG-BMP085 initialisieren
+161119-112440-KY053_Sensor-32-DEBUG-KY-053 sensor successful created
+161119-112440-KY053_Sensor-42-DEBUG-KY053 constructor ended
+161119-112440-KY053_Sensor-73-DEBUG-Temperatur jitter: actTemp: 21.3 lastTemp: -99.0
+161119-112440-KY053_Sensor-80-INFO-Temp: 21.3 Druck: 990.29
+161119-112440-Mail-15-DEBUG-Mail constructor
+161119-112440-Mail-48-DEBUG-From: robert.jonas@gmx.at
+To: robert.jonas@gmx.at
+Date: Sat Nov 19 11:24:40 2016
+Subject: Druck
+
+Aktueller Druck: 990.29 Minimum: 990.29 Maximum: 990.29 2016-11-19 11:24:40.577363
+161119-115500-KY053_Sensor-80-INFO-Temp: 21.3 DruckChange: 990.39
+161119-115829-KY053_Sensor-80-ERROR-Temp: 21.3 DruckChange: 990.34
+161119-120139-jrWetterstation-32-INFO-Wetterstation gestartet
+161119-120139-KY053_Sensor-80-ERROR-Temp: 21.2 DruckChange: 990.3
+161119-120223-jrWetterstation-50-ERROR-Global: Program stopped by external interrupt
+161119-120526-jrWetterstation-32-INFO-
+Wetterstation gestartet
+161119-120526-KY053_Sensor-80-ERROR-Temp: 21.2 DruckChange: 990.29
+161119-120635-jrWetterstation-50-ERROR-Global: Program stopped by external interrupt
+161119-120834-KY053_Sensor-23-DEBUG-KY053 constructor started
+161119-120834-KY053_Sensor-29-DEBUG-BMP085 initialisieren
+161119-120834-KY053_Sensor-32-DEBUG-KY-053 sensor successful created
+161119-120834-KY053_Sensor-42-DEBUG-KY053 constructor ended
+161119-120834-jrWetterstation-32-INFO-
+
+Wetterstation gestartet
+
+161119-120835-KY053_Sensor-73-DEBUG-Temperatur jitter: actTemp: 21.2 lastTemp: -99.0
+161119-120835-KY053_Sensor-80-INFO-Temp: 21.2 DruckChange: 990.21
+161119-120835-Mail-15-DEBUG-Mail constructor
+161119-120835-Mail-48-DEBUG-From: robert.jonas@gmx.at
+To: robert.jonas@gmx.at
+Date: Sat Nov 19 12:08:35 2016
+Subject: Druck
+
+Aktueller Druck: 990.21 Minimum: 990.21 Maximum: 990.21 2016-11-19 12:08:35.003419
+161119-120931-jrWetterstation-50-ERROR-Global: Program stopped by external interrupt

@@ -22,25 +22,22 @@ class KY053_Sensor:
         self.myLogger=logging.getLogger('jrWetterstationLogger')
         self.myLogger.debug('KY053 constructor started')
 
-        sleeptime=1 #sec 
-        success=False
-        while not success:
+        retrytime=1 #sec 
+        while True:
             try:
                 # Sensor wird initialisiert
                 self.myLogger.debug('BMP085 initialisieren')
                 self.BMPSensor = BMP085.BMP085()
                 success=True
                 self.myLogger.debug('KY-053 sensor successful created')
+                break
             except IOError:
                 self.myLogger.debug('KY-053 sensor not detected. Check wiring. Try again in: '+str(sleeptime)+' seconds')
                 print ("KY-053 Sensor nicht erkannt!")
                 print ("Ueberpruefen Sie die Verbindungen")
                 print ("Naechste Versuch in: "+str(sleeptime)+" Sekunden")
-                time.sleep(sleeptime)
-                sleeptime*=3
-            except KeyboardInterrupt:
-                self.myLogger.debug('Program stopped by keyboard interupt')
-                GPIO.cleanup()
+                time.sleep(retrytime)
+                retrytime*=3
 
         self.myLogger.debug('KY053 constructor ended')
 #=======================================================================================================================
@@ -61,7 +58,7 @@ class KY053_Sensor:
         if (self.actTemp < self.lastTemp-deltaTemp) or (self.actTemp > self.lastTemp+deltaTemp):
             #eliminate jitter (diff > 10 degrees)
             if abs(self.actTemp-self.lastTemp) < 10: 
-                self.myLogger.info('Temp: '+str(self.actTemp)+' Druck: '+str(self.actPress))
+                self.myLogger.info('TempChange: '+str(self.actTemp)+' Druck: '+str(self.actPress))
                 #write to db
                 con = sql.connect('Wetterstation.db')
                 with con:    
@@ -80,7 +77,7 @@ class KY053_Sensor:
         if (self.actPress<self.minPress): self.minPress=self.actPress
         if (self.actPress>self.maxPress): self.maxPress=self.actPress
         if (self.actPress<self.lastPress-deltaPress) or (self.actPress>self.lastPress+deltaPress):
-            self.myLogger.info('Temp: '+str(self.actTemp)+' Druck: '+str(self.actPress))
+            self.myLogger.info('Temp: '+str(self.actTemp)+' DruckChange: '+str(self.actPress))
             self.lastPress=self.actPress
             myMail=Mail()
             myMail.sendPressMail(self.actPress,self.minPress,self.maxPress)

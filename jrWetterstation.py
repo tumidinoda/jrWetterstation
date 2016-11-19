@@ -13,8 +13,8 @@ LOG_FILENAME = 'jrWetterstation-Log'
 
 # Set up a specific logger with our desired output level
 myLogger = logging.getLogger('jrWetterstationLogger')
-myLogger.setLevel(logging.DEBUG)
-
+#myLogger.setLevel(logging.DEBUG)
+myLogger.setLevel(logging.INFO)
 # Add the log message handler to the logger
 handler = logging.handlers.RotatingFileHandler(
               LOG_FILENAME, maxBytes=100000, backupCount=5)
@@ -29,6 +29,7 @@ sleepTime = 5
 ky053 = KY053()   #KY053 Sensor instance created
 #===============================================================================
 try:
+    myLogger.info('\n\nWetterstation gestartet\n')
     while True:
         #temp.read()
         #temp.out()
@@ -40,6 +41,12 @@ try:
         
         time.sleep(sleepTime)
 
-except KeyboardInterrupt:
-    myLogger.debug('Program stopped by keyboard interupt')
+except Exception:
+    myLogger.error('Global: unhandled exception. Continue program')
+    pass
+
+except:
+    message='Global: Program stopped by external interrupt'
+    myLogger.error(message)
+    print message
     GPIO.cleanup()
