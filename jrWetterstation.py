@@ -2,6 +2,7 @@ from Temperatur import Temperatur
 from KY053_Sensor import KY053_Sensor as KY053
 import time
 import RPi.GPIO as GPIO
+import sys
 
 #===============================================================================
 #define cyclic logging
@@ -42,7 +43,9 @@ try:
         time.sleep(sleepTime)
 
 except Exception:
-    myLogger.error('Global: unhandled exception. Continue program')
+    errmsg=sys.exc_info()[0]
+    #myLogger.error('Global: unhandled exception. Continue program')
+    myLogger.error(errmsg)
     pass
 
 except:

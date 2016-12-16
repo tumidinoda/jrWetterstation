@@ -564,3 +564,24 @@ Wetterstation gestartet
 
 161216-185449-KY053_Sensor-86-INFO-Temp: 22.2 DruckChange: 1016.74
 161216-185525-jrWetterstation-50-ERROR-Global: Program stopped by external interrupt
+161216-190725-jrWetterstation-32-INFO-
+
+Wetterstation gestartet
+
+161216-190725-KY053_Sensor-86-INFO-Temp: 22.3 DruckChange: 1016.76
+161216-192203-KY053_Sensor-67-INFO-TempChange: 27.2 Druck: 1016.84
+161216-192203-jrWetterstation-45-ERROR-Global: unhandled exception. Continue program
+161216-192515-jrWetterstation-32-INFO-
+
+Wetterstation gestartet
+
+161216-192515-KY053_Sensor-86-INFO-Temp: 22.7 DruckChange: 1016.82
+161216-193938-KY053_Sensor-67-INFO-TempChange: 22.1 Druck: 1016.77
+161216-193938-jrWetterstation-45-ERROR-Global: unhandled exception. Continue program
+161216-195640-jrWetterstation-33-INFO-
+
+Wetterstation gestartet
+
+161216-195640-KY053_Sensor-86-INFO-Temp: 22.0 DruckChange: 1016.79
+161216-195656-KY053_Sensor-67-INFO-TempChange: 23.6 Druck: 1016.82
+161216-195656-jrWetterstation-48-ERROR-<class 'sqlite3.OperationalError'>
