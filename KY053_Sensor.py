@@ -11,6 +11,7 @@ import rrdtool
 class KY053_Sensor:    
 #=======================================================================================================================
     def __init__(self):
+        self.hoehe=166 #Hoehe Seyring
         self.lastTemp = -99.0
         self.actTemp = -99.0
         self.minTemp=99.9
@@ -44,7 +45,9 @@ class KY053_Sensor:
 #=======================================================================================================================
     def read(self):
         self.actTemp=self.BMPSensor.read_temperature()
-        self.actPress=self.BMPSensor.read_pressure()/100.0
+        press=self.BMPSensor.read_pressure()/100.0
+        #Umrechnen auf Meereshoehe
+        self.actPress=press/pow(1.0-self.hoehe/44330.0,5.255)
 #=======================================================================================================================
     def out(self):
         print '---------------------------------------'
