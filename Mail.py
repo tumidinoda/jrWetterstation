@@ -52,4 +52,19 @@ class Mail():
         server.sendmail(self.adress,self.adress,text)
         server.quit()
 #=======================================================================================================================
+    def sendMail(self,msg):
+        inhalt=msg
+            
+        text='From: '+self.adress+'\n'
+        text+='To: '+self.adress+'\n'
+        text+='Date: '+time.ctime(time.time())+'\n'
+        text+='Subject: Wetterstation Fehler\n\n'
+        text+=inhalt
 
+        self.myLogger.debug(text)
+
+        server=smtplib.SMTP_SSL(self.smtpserver)
+        server.login(self.user,self.pw)
+        server.sendmail(self.adress,self.adress,text)
+        server.quit()
+#=======================================================================================================================

@@ -585,3 +585,65 @@ Wetterstation gestartet
 161216-195640-KY053_Sensor-86-INFO-Temp: 22.0 DruckChange: 1016.79
 161216-195656-KY053_Sensor-67-INFO-TempChange: 23.6 Druck: 1016.82
 161216-195656-jrWetterstation-48-ERROR-<class 'sqlite3.OperationalError'>
+161216-201454-jrWetterstation-34-INFO-
+
+Wetterstation gestartet
+
+161216-201454-KY053_Sensor-86-INFO-Temp: 22.3 DruckChange: 1016.77
+161216-201520-KY053_Sensor-67-INFO-TempChange: 24.2 Druck: 1016.78
+161216-201520-jrWetterstation-49-ERROR-<class 'sqlite3.OperationalError'>
+161216-201621-jrWetterstation-34-INFO-
+
+Wetterstation gestartet
+
+161216-201621-KY053_Sensor-86-INFO-Temp: 22.5 DruckChange: 1016.93
+161216-201641-KY053_Sensor-67-INFO-TempChange: 25.0 Druck: 1016.91
+161216-201641-jrWetterstation-49-ERROR-<class 'sqlite3.OperationalError'>
+161216-201732-jrWetterstation-34-INFO-
+
+Wetterstation gestartet
+
+161216-201732-KY053_Sensor-86-INFO-Temp: 23.0 DruckChange: 1016.95
+161216-201737-KY053_Sensor-67-INFO-TempChange: 24.3 Druck: 1016.99
+161216-201737-jrWetterstation-49-ERROR-<class 'sqlite3.OperationalError'>
+161216-202108-jrWetterstation-34-INFO-
+
+Wetterstation gestartet
+
+161216-202108-KY053_Sensor-86-INFO-Temp: 22.7 DruckChange: 1016.91
+161216-202129-KY053_Sensor-67-INFO-TempChange: 24.1 Druck: 1016.95
+161216-202129-jrWetterstation-49-ERROR-<class 'sqlite3.OperationalError'>
+161216-202916-jrWetterstation-34-INFO-
+
+Wetterstation gestartet
+
+161216-202916-KY053_Sensor-86-INFO-Temp: 22.6 DruckChange: 1016.8
+161216-202927-KY053_Sensor-67-INFO-TempChange: 23.5 Druck: 1016.88
+161216-203026-jrWetterstation-34-INFO-
+
+Wetterstation gestartet
+
+161216-203026-KY053_Sensor-86-INFO-Temp: 22.7 DruckChange: 1016.84
+161216-203037-KY053_Sensor-67-INFO-TempChange: 24.2 Druck: 1016.86
+161216-203037-jrWetterstation-50-ERROR-Traceback (most recent call last):
+  File "jrWetterstation.py", line 42, in <module>
+    ky053.save()
+  File "/home/robert/jrWetterstation/KY053_Sensor.py", line 72, in save
+    cur.execute("INSERT INTO tempLogs(temperatur) VALUES(?)",(self.actTemp,))
+OperationalError: no such table: tempLogs
+
+161216-203154-jrWetterstation-34-INFO-
+
+Wetterstation gestartet
+
+161216-203154-KY053_Sensor-86-INFO-Temp: 22.8 DruckChange: 1016.9
+161216-203205-KY053_Sensor-67-INFO-TempChange: 25.5 Druck: 1016.9
+161216-203211-KY053_Sensor-67-INFO-TempChange: 24.8 Druck: 1017.0
+161216-203223-KY053_Sensor-67-INFO-TempChange: 24.2 Druck: 1016.95
+161216-203245-KY053_Sensor-67-INFO-TempChange: 23.5 Druck: 1016.91
+161216-203250-jrWetterstation-57-ERROR-Global: Program stopped by external interrupt
+161216-203352-jrWetterstation-34-INFO-
+
+Wetterstation gestartet
+
+161216-203352-KY053_Sensor-86-INFO-Temp: 22.9 DruckChange: 1016.98
