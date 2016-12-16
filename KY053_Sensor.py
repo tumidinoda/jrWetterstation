@@ -6,6 +6,7 @@ import sys
 import logging
 from datetime import datetime
 from Mail import Mail
+import rrdtool
 
 class KY053_Sensor:    
 #=======================================================================================================================
@@ -51,6 +52,9 @@ class KY053_Sensor:
         print "Druck:", self.actPress, "hPa"
 #=======================================================================================================================
     def save(self):
+		#write values to round robin DB
+		rrdtool.update('jrWetter.rrd','N:%s:%s' %(self.actTemp,self.actPress))
+	
         # save only if diff greater than delta
         deltaTemp=0.5
         if (self.actTemp<self.minTemp): self.minTemp=self.actTemp
