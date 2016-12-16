@@ -52,9 +52,11 @@ class KY053_Sensor:
         print "Druck:", self.actPress, "hPa"
 #=======================================================================================================================
     def save(self):
-		#write values to round robin DB
-		rrdtool.update('jrWetter.rrd','N:%s:%s' %(self.actTemp,self.actPress))
-	
+	#write values to round robin DB
+	rrdtool.update('jrWetter.rrd','N:%s:%s' %(self.actTemp,self.actPress))
+	#print cmd
+        #rrdtool.update(cmd)	
+
         # save only if diff greater than delta
         deltaTemp=0.5
         if (self.actTemp<self.minTemp): self.minTemp=self.actTemp

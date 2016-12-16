@@ -530,3 +530,37 @@ Aktueller Druck: 990.21 Minimum: 990.21 Maximum: 990.21 2016-11-19 12:08:35.0034
 Wetterstation gestartet
 
 161216-170431-KY053_Sensor-80-INFO-Temp: 21.6 DruckChange: 1016.4
+161216-182440-KY053_Sensor-61-INFO-TempChange: 23.6 Druck: 1016.57
+161216-182440-jrWetterstation-45-ERROR-Global: unhandled exception. Continue program
+161216-184534-jrWetterstation-32-INFO-
+
+Wetterstation gestartet
+
+161216-184534-KY053_Sensor-84-INFO-Temp: 22.2 DruckChange: 1016.62
+161216-184603-jrWetterstation-50-ERROR-Global: Program stopped by external interrupt
+161216-184818-jrWetterstation-32-INFO-
+
+Wetterstation gestartet
+
+161216-184818-jrWetterstation-45-ERROR-Global: unhandled exception. Continue program
+161216-184911-jrWetterstation-32-INFO-
+
+Wetterstation gestartet
+
+161216-184911-jrWetterstation-45-ERROR-Global: unhandled exception. Continue program
+161216-185206-jrWetterstation-32-INFO-
+
+Wetterstation gestartet
+
+161216-185206-jrWetterstation-45-ERROR-Global: unhandled exception. Continue program
+161216-185324-jrWetterstation-32-INFO-
+
+Wetterstation gestartet
+
+161216-185324-jrWetterstation-45-ERROR-Global: unhandled exception. Continue program
+161216-185449-jrWetterstation-32-INFO-
+
+Wetterstation gestartet
+
+161216-185449-KY053_Sensor-86-INFO-Temp: 22.2 DruckChange: 1016.74
+161216-185525-jrWetterstation-50-ERROR-Global: Program stopped by external interrupt
