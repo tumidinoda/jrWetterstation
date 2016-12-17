@@ -677,3 +677,31 @@ Wetterstation gestartet
 
 161217-091447-KY053_Sensor-90-INFO-Temp: 21.1 DruckChange: 1038.43
 161217-091513-jrWetterstation-57-ERROR-Global: Program stopped by external interrupt
+161217-091908-jrWetterstation-34-INFO-
+
+Wetterstation gestartet
+
+161217-091908-KY053_Sensor-90-INFO-Temp: 21.2 DruckChange: 1038.43
+161217-112547-KY053_Sensor-71-INFO-TempChange: 21.8 Druck: 1038.28
+161217-113443-KY053_Sensor-71-INFO-TempChange: 22.4 Druck: 1038.23
+161217-114630-KY053_Sensor-71-INFO-TempChange: 23.0 Druck: 1038.3
+161217-124855-KY053_Sensor-71-INFO-TempChange: 22.4 Druck: 1037.85
+161217-130233-KY053_Sensor-71-INFO-TempChange: 21.8 Druck: 1037.8
+161217-133022-KY053_Sensor-90-INFO-Temp: 22.1 DruckChange: 1037.4
+161217-133535-KY053_Sensor-71-INFO-TempChange: 22.4 Druck: 1037.47
+161217-140841-KY053_Sensor-71-INFO-TempChange: 23.0 Druck: 1037.56
+161217-150951-KY053_Sensor-71-INFO-TempChange: 22.4 Druck: 1037.58
+161217-152323-KY053_Sensor-71-INFO-TempChange: 21.8 Druck: 1037.63
+161217-160700-KY053_Sensor-71-INFO-TempChange: 21.2 Druck: 1037.61
+161217-180627-KY053_Sensor-71-INFO-TempChange: 21.8 Druck: 1037.53
+161217-181125-KY053_Sensor-71-INFO-TempChange: 22.4 Druck: 1037.4
+161217-181855-KY053_Sensor-71-INFO-TempChange: 23.0 Druck: 1037.54
+161217-200406-jrWetterstation-34-INFO-
+
+Wetterstation gestartet
+
+161217-200406-KY053_Sensor-90-INFO-Temp: 23.3 DruckChange: 1037.6
+161217-200437-KY053_Sensor-71-INFO-TempChange: 25.2 Druck: 1037.69
+161217-200444-KY053_Sensor-71-INFO-TempChange: 24.6 Druck: 1037.74
+161217-200501-KY053_Sensor-71-INFO-TempChange: 23.9 Druck: 1037.68
+161217-200542-KY053_Sensor-71-INFO-TempChange: 23.3 Druck: 1037.66
