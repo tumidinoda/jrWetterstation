@@ -48,6 +48,7 @@ class KY053_Sensor:
         press=self.BMPSensor.read_pressure()/100.0
         #Umrechnen auf Meereshoehe
         self.actPress=press/pow(1.0-self.hoehe/44330.0,5.255)
+        self.actPress=round(self.actPress,2)
 #=======================================================================================================================
     def out(self):
         print '---------------------------------------'
