@@ -1,5 +1,6 @@
 #ignore Database
 Wetterstation.db
+jrWetter.rrd
 
 
 # Byte-compiled / optimized / DLL files
