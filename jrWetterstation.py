@@ -2,8 +2,6 @@ from Temperatur import Temperatur
 from KY053_Sensor import KY053_Sensor as KY053
 import time
 import RPi.GPIO as GPIO
-import sys, traceback
-from Mail import Mail
 
 #===============================================================================
 #define cyclic logging
@@ -44,12 +42,7 @@ try:
         time.sleep(sleepTime)
 
 except Exception:
-    #errmsg=str(sys.exc_info()[0])
-    errmsg=traceback.format_exc()
-    #myLogger.error('Global: unhandled exception. Continue program')
-    myLogger.error(errmsg)
-    myMail=Mail()
-    myMail.sendMail(errmsg)
+    myLogger.error('Global: unhandled exception. Continue program')
     pass
 
 except:
