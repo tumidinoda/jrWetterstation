@@ -9,10 +9,10 @@ import glob
 import logging
 import logging.handlers
 
-LOG_FILENAME = 'jrWetterstation-Log'
+LOG_FILENAME = 'jrWetterstation-Log.log'
 
 # Set up a specific logger with our desired output level
-myLogger = logging.getLogger('jrWetterstationLogger')
+myLogger = logging.getLogger('jrWetterstationLogger.log')
 #myLogger.setLevel(logging.DEBUG)
 myLogger.setLevel(logging.INFO)
 # Add the log message handler to the logger
