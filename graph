@@ -1,0 +1,1 @@
+rrdtool graph WetterDay.png DEF:press0=jrWetter.rrd:press0:AVERAGE LINE2:press0#000000:Seyring
