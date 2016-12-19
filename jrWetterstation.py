@@ -1,7 +1,7 @@
 from Temperatur import Temperatur
 from KY052_Sensor import KY052_Sensor as KY052
-import time
-import RPi.GPIO as GPIO
+import time, sys, traceback
+from jrMail import *
 
 #===============================================================================
 #define cyclic logging
@@ -45,12 +45,11 @@ except Exception:
     errMsg="Global exception handler: \n"
     errMsg+=traceback.format_exc()
     myLogger.error(errMsg)
-    myMail=Mail()
-    myMail.sendMail(errMsg)
+    myMail=jrMail()
+    myMail.sendMail('Wetterstation: Global Exception',errMsg)
     pass
 
 except:
     message='Global exception handler:\nProgram stopped by external interrupt'
     myLogger.error(message)
     print message
-    GPIO.cleanup()
