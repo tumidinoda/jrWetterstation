@@ -1,15 +1,14 @@
-# -*- coding: utf-8 -*-
 import Adafruit_BMP.BMP085 as BMP085
-import time
+import time, sys, logging
 import sqlite3 as sql
-import sys
-import logging
 from datetime import datetime
-from Mail import Mail
+from jrMail import *
+import rrdtool
 
-class KY053_Sensor:    
+class KY052_Sensor:    
 #=======================================================================================================================
     def __init__(self):
+        self.hoehe=166 #Hoehe Seyring
         self.lastTemp = -99.0
         self.actTemp = -99.0
         self.minTemp=99.9
@@ -43,14 +42,22 @@ class KY053_Sensor:
 #=======================================================================================================================
     def read(self):
         self.actTemp=self.BMPSensor.read_temperature()
-        self.actPress=self.BMPSensor.read_pressure()/100.0
+        press=self.BMPSensor.read_pressure()/100.0
+        #Umrechnen auf Meereshoehe
+        self.actPress=press/pow(1.0-self.hoehe/44330.0,5.255)
+        self.actPress=round(self.actPress,2)
 #=======================================================================================================================
     def out(self):
         print '---------------------------------------'
-        print "Temperatur:", self.actTemp, "°C"
+        print "Temperatur:", self.actTemp, " C"
         print "Druck:", self.actPress, "hPa"
 #=======================================================================================================================
     def save(self):
+	#write values to round robin DB
+	rrdtool.update('jrWetter.rrd','N:%s:%s' %(self.actTemp,self.actPress))
+	#print cmd
+        #rrdtool.update(cmd)	
+
         # save only if diff greater than delta
         deltaTemp=0.5
         if (self.actTemp<self.minTemp): self.minTemp=self.actTemp
@@ -59,15 +66,8 @@ class KY053_Sensor:
             #eliminate jitter (diff > 10 degrees)
             if abs(self.actTemp-self.lastTemp) < 10: 
                 self.myLogger.info('TempChange: '+str(self.actTemp)+' Druck: '+str(self.actPress))
-                #write to db
-                con = sql.connect('Wetterstation.db')
-                with con:    
-                    cur = con.cursor()
-                    cur.execute("INSERT INTO tempLogs(temperatur) VALUES(?)",(self.actTemp,))
-                con.commit()
-                con.close()
                 #send Mail to Robert
-                myMail=Mail()
+                myMail=jrMail()
                 myMail.sendTempMail(self.actTemp,self.minTemp,self.maxTemp)
             else:
                 self.myLogger.debug('Temperatur jitter: actTemp: '+str(self.actTemp)+' lastTemp: '+str(self.lastTemp))
@@ -79,7 +79,7 @@ class KY053_Sensor:
         if (self.actPress<self.lastPress-deltaPress) or (self.actPress>self.lastPress+deltaPress):
             self.myLogger.info('Temp: '+str(self.actTemp)+' DruckChange: '+str(self.actPress))
             self.lastPress=self.actPress
-            myMail=Mail()
+            myMail=jrMail()
             myMail.sendPressMail(self.actPress,self.minPress,self.maxPress)
 
 

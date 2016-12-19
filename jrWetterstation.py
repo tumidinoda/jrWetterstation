@@ -1,7 +1,6 @@
-from Temperatur import Temperatur
-from KY053_Sensor import KY053_Sensor as KY053
-import time
-import RPi.GPIO as GPIO
+from KY052_Sensor import KY052_Sensor as KY052
+import time, sys, traceback
+from jrMail import *
 
 #===============================================================================
 #define cyclic logging
@@ -9,10 +8,10 @@ import glob
 import logging
 import logging.handlers
 
-LOG_FILENAME = 'jrWetterstation-Log'
+LOG_FILENAME = 'jrWetterstation-Log.log'
 
 # Set up a specific logger with our desired output level
-myLogger = logging.getLogger('jrWetterstationLogger')
+myLogger = logging.getLogger('jrWetterstationLogger.log')
 #myLogger.setLevel(logging.DEBUG)
 myLogger.setLevel(logging.INFO)
 # Add the log message handler to the logger
@@ -26,7 +25,7 @@ myLogger.addHandler(handler)
 #define global variables
 sleepTime = 5
 #temp = Temperatur()
-ky053 = KY053()   #KY053 Sensor instance created
+ky052 = KY052()   #KY052 Sensor instance created
 #===============================================================================
 try:
     myLogger.info('\n\nWetterstation gestartet\n')
@@ -35,18 +34,21 @@ try:
         #temp.out()
         #temp.save()
         
-        ky053.read()
-#       ky053.out()
-        ky053.save()
+        ky052.read()
+#       ky052.out()
+        ky052.save()
         
         time.sleep(sleepTime)
 
 except Exception:
-    myLogger.error('Global: unhandled exception. Continue program')
+    errMsg="Global exception handler: \n"
+    errMsg+=traceback.format_exc()
+    myLogger.error(errMsg)
+    myMail=jrMail()
+    myMail.sendMail('Wetterstation: Global Exception',errMsg)
     pass
 
 except:
-    message='Global: Program stopped by external interrupt'
+    message='Global exception handler:\nProgram stopped by external interrupt'
     myLogger.error(message)
     print message
-    GPIO.cleanup()

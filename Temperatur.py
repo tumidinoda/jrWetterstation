@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 import glob
 import time
 from time import sleep
@@ -6,7 +5,7 @@ import RPi.GPIO as GPIO
 import sqlite3 as sql
 import sys
 from datetime import datetime
-from Mail import Mail
+from jrMail import *
 
 class Temperatur:    
 #=======================================================================================================================
