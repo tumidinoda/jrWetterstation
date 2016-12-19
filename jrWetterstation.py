@@ -2,8 +2,6 @@ from Temperatur import Temperatur
 from KY053_Sensor import KY053_Sensor as KY053
 import time
 import RPi.GPIO as GPIO
-import sys, traceback
-from Mail import Mail
 
 #===============================================================================
 #define cyclic logging
@@ -11,10 +9,10 @@ import glob
 import logging
 import logging.handlers
 
-LOG_FILENAME = 'jrWetterstation-Log'
+LOG_FILENAME = 'jrWetterstation-Log.log'
 
 # Set up a specific logger with our desired output level
-myLogger = logging.getLogger('jrWetterstationLogger')
+myLogger = logging.getLogger('jrWetterstationLogger.log')
 #myLogger.setLevel(logging.DEBUG)
 myLogger.setLevel(logging.INFO)
 # Add the log message handler to the logger
@@ -44,12 +42,7 @@ try:
         time.sleep(sleepTime)
 
 except Exception:
-    #errmsg=str(sys.exc_info()[0])
-    errmsg=traceback.format_exc()
-    #myLogger.error('Global: unhandled exception. Continue program')
-    myLogger.error(errmsg)
-    myMail=Mail()
-    myMail.sendMail(errmsg)
+    myLogger.error('Global: unhandled exception. Continue program')
     pass
 
 except:
