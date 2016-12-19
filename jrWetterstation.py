@@ -1,4 +1,3 @@
-from Temperatur import Temperatur
 from KY052_Sensor import KY052_Sensor as KY052
 import time, sys, traceback
 from jrMail import *

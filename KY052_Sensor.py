@@ -1,11 +1,8 @@
-# -*- coding: utf-8 -*-
 import Adafruit_BMP.BMP085 as BMP085
-import time
+import time, sys, logging
 import sqlite3 as sql
-import sys
-import logging
 from datetime import datetime
-from Mail import Mail
+from jrMail import *
 import rrdtool
 
 class KY052_Sensor:    
@@ -52,7 +49,7 @@ class KY052_Sensor:
 #=======================================================================================================================
     def out(self):
         print '---------------------------------------'
-        print "Temperatur:", self.actTemp, "°C"
+        print "Temperatur:", self.actTemp, " C"
         print "Druck:", self.actPress, "hPa"
 #=======================================================================================================================
     def save(self):
@@ -69,15 +66,8 @@ class KY052_Sensor:
             #eliminate jitter (diff > 10 degrees)
             if abs(self.actTemp-self.lastTemp) < 10: 
                 self.myLogger.info('TempChange: '+str(self.actTemp)+' Druck: '+str(self.actPress))
-                #write to db
-                con = sql.connect('Wetterstation.db')
-                with con:    
-                    cur = con.cursor()
-                    cur.execute("INSERT INTO tempLogs(temperatur) VALUES(?)",(self.actTemp,))
-                con.commit()
-                con.close()
                 #send Mail to Robert
-                myMail=Mail()
+                myMail=jrMail()
                 myMail.sendTempMail(self.actTemp,self.minTemp,self.maxTemp)
             else:
                 self.myLogger.debug('Temperatur jitter: actTemp: '+str(self.actTemp)+' lastTemp: '+str(self.lastTemp))
@@ -89,7 +79,7 @@ class KY052_Sensor:
         if (self.actPress<self.lastPress-deltaPress) or (self.actPress>self.lastPress+deltaPress):
             self.myLogger.info('Temp: '+str(self.actTemp)+' DruckChange: '+str(self.actPress))
             self.lastPress=self.actPress
-            myMail=Mail()
+            myMail=jrMail()
             myMail.sendPressMail(self.actPress,self.minPress,self.maxPress)
 
 
