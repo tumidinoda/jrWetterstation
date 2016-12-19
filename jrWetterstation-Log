@@ -1,0 +1,714 @@
+2016-11-18 16:41:37,278-DEBUG-i = 14
+2016-11-18 16:41:37,279-DEBUG-i = 15
+2016-11-18 16:41:37,279-DEBUG-i = 16
+2016-11-18 16:41:37,280-DEBUG-i = 17
+2016-11-18 16:41:37,280-DEBUG-i = 18
+2016-11-18 16:41:37,280-DEBUG-i = 19
+2016-11-18 16:49:05,725-DEBUG-i = 0
+2016-11-18 16:49:05,726-DEBUG-i = 1
+2016-11-18 16:49:05,726-DEBUG-i = 2
+2016-11-18 16:49:05,727-DEBUG-i = 3
+2016-11-18 16:49:05,727-DEBUG-i = 4
+2016-11-18 16:49:05,727-DEBUG-i = 5
+2016-11-18 16:49:05,727-DEBUG-i = 6
+2016-11-18 16:49:05,728-DEBUG-i = 7
+2016-11-18 16:49:05,728-DEBUG-i = 8
+2016-11-18 16:49:05,728-DEBUG-i = 9
+2016-11-18 16:49:05,728-DEBUG-i = 10
+2016-11-18 16:49:05,729-DEBUG-i = 11
+2016-11-18 16:49:05,729-DEBUG-i = 12
+2016-11-18 16:49:05,729-DEBUG-i = 13
+2016-11-18 16:49:05,729-DEBUG-i = 14
+2016-11-18 16:49:05,730-DEBUG-i = 15
+2016-11-18 16:49:05,730-DEBUG-i = 16
+2016-11-18 16:49:05,730-DEBUG-i = 17
+2016-11-18 16:49:05,731-DEBUG-i = 18
+2016-11-18 16:49:05,731-DEBUG-i = 19
+2016-11-18 17:18:47,388-DEBUG-i = 0
+2016-11-18 17:18:47,389-DEBUG-i = 1
+2016-11-18 17:18:47,389-DEBUG-i = 2
+2016-11-18 17:18:47,389-DEBUG-i = 3
+2016-11-18 17:18:47,389-DEBUG-i = 4
+2016-11-18 17:18:47,390-DEBUG-i = 5
+2016-11-18 17:18:47,390-DEBUG-i = 6
+2016-11-18 17:18:47,390-DEBUG-i = 7
+2016-11-18 17:18:47,390-DEBUG-i = 8
+2016-11-18 17:18:47,391-DEBUG-i = 9
+2016-11-18 17:18:47,391-DEBUG-i = 10
+2016-11-18 17:18:47,391-DEBUG-i = 11
+2016-11-18 17:18:47,392-DEBUG-i = 12
+2016-11-18 17:18:47,392-DEBUG-i = 13
+2016-11-18 17:18:47,392-DEBUG-i = 14
+2016-11-18 17:18:47,392-DEBUG-i = 15
+2016-11-18 17:18:47,393-DEBUG-i = 16
+2016-11-18 17:18:47,393-DEBUG-i = 17
+2016-11-18 17:18:47,393-DEBUG-i = 18
+2016-11-18 17:18:47,394-DEBUG-i = 19
+2016-11-18 17:18:47,394-DEBUG-KY053 Konstruktor start
+2016-11-18 17:18:47,394-DEBUG-BMP085 initialisieren
+2016-11-18 17:18:47,410-DEBUG-KY-053 sensor not detected. Check wiring
+2016-11-18 17:43:06,430-jrWetterstation-27-DEBUG-i = 0
+2016-11-18 17:43:06,431-jrWetterstation-27-DEBUG-i = 1
+2016-11-18 17:43:06,431-jrWetterstation-27-DEBUG-i = 2
+2016-11-18 17:43:06,431-jrWetterstation-27-DEBUG-i = 3
+2016-11-18 17:43:06,432-jrWetterstation-27-DEBUG-i = 4
+2016-11-18 17:43:06,432-jrWetterstation-27-DEBUG-i = 5
+2016-11-18 17:43:06,432-jrWetterstation-27-DEBUG-i = 6
+2016-11-18 17:43:06,433-jrWetterstation-27-DEBUG-i = 7
+2016-11-18 17:43:06,433-jrWetterstation-27-DEBUG-i = 8
+2016-11-18 17:43:06,433-jrWetterstation-27-DEBUG-i = 9
+2016-11-18 17:43:06,433-jrWetterstation-27-DEBUG-i = 10
+2016-11-18 17:43:06,434-jrWetterstation-27-DEBUG-i = 11
+2016-11-18 17:43:06,434-jrWetterstation-27-DEBUG-i = 12
+2016-11-18 17:43:06,434-jrWetterstation-27-DEBUG-i = 13
+2016-11-18 17:43:06,434-jrWetterstation-27-DEBUG-i = 14
+2016-11-18 17:43:06,435-jrWetterstation-27-DEBUG-i = 15
+2016-11-18 17:43:06,435-jrWetterstation-27-DEBUG-i = 16
+2016-11-18 17:43:06,435-jrWetterstation-27-DEBUG-i = 17
+2016-11-18 17:43:06,436-jrWetterstation-27-DEBUG-i = 18
+2016-11-18 17:43:06,436-jrWetterstation-27-DEBUG-i = 19
+2016-11-18 17:43:06,436-KY053_Sensor-20-DEBUG-KY053 Konstruktor start
+2016-11-18 17:43:06,436-KY053_Sensor-24-DEBUG-BMP085 initialisieren
+2016-11-18 17:43:06,454-KY053_Sensor-29-DEBUG-KY-053 sensor not detected. Check wiring
+20161118-175218-jrWetterstation-27-DEBUG-i = 0
+20161118-175218-jrWetterstation-27-DEBUG-i = 1
+20161118-175218-jrWetterstation-27-DEBUG-i = 2
+20161118-175218-jrWetterstation-27-DEBUG-i = 3
+20161118-175218-jrWetterstation-27-DEBUG-i = 4
+20161118-175218-jrWetterstation-27-DEBUG-i = 5
+20161118-175218-jrWetterstation-27-DEBUG-i = 6
+20161118-175218-jrWetterstation-27-DEBUG-i = 7
+20161118-175218-jrWetterstation-27-DEBUG-i = 8
+20161118-175218-jrWetterstation-27-DEBUG-i = 9
+20161118-175218-jrWetterstation-27-DEBUG-i = 10
+20161118-175218-jrWetterstation-27-DEBUG-i = 11
+20161118-175218-jrWetterstation-27-DEBUG-i = 12
+20161118-175218-jrWetterstation-27-DEBUG-i = 13
+20161118-175218-jrWetterstation-27-DEBUG-i = 14
+20161118-175218-jrWetterstation-27-DEBUG-i = 15
+20161118-175218-jrWetterstation-27-DEBUG-i = 16
+20161118-175218-jrWetterstation-27-DEBUG-i = 17
+20161118-175218-jrWetterstation-27-DEBUG-i = 18
+20161118-175218-jrWetterstation-27-DEBUG-i = 19
+20161118-175218-KY053_Sensor-20-DEBUG-KY053 Konstruktor start
+20161118-175218-KY053_Sensor-24-DEBUG-BMP085 initialisieren
+20161118-175218-KY053_Sensor-29-DEBUG-KY-053 sensor not detected. Check wiring
+161118-175727-KY053_Sensor-20-DEBUG-KY053 Konstruktor start
+161118-175727-KY053_Sensor-24-DEBUG-BMP085 initialisieren
+161118-175727-KY053_Sensor-29-DEBUG-KY-053 sensor not detected. Check wiring
+161118-181106-KY053_Sensor-19-DEBUG-KY053 constructor started
+161118-181152-KY053_Sensor-19-DEBUG-KY053 constructor started
+161118-181224-KY053_Sensor-19-DEBUG-KY053 constructor started
+161118-181224-KY053_Sensor-26-DEBUG-BMP085 initialisieren
+161118-181333-KY053_Sensor-19-DEBUG-KY053 constructor started
+161118-181333-KY053_Sensor-26-DEBUG-BMP085 initialisieren
+161118-181333-KY053_Sensor-31-DEBUG-KY-053 sensor not detected. Check wiring. Try again in: 1 seconds
+161118-181406-KY053_Sensor-19-DEBUG-KY053 constructor started
+161118-181406-KY053_Sensor-26-DEBUG-BMP085 initialisieren
+161118-181406-KY053_Sensor-31-DEBUG-KY-053 sensor not detected. Check wiring. Try again in: 1 seconds
+161118-181407-KY053_Sensor-26-DEBUG-BMP085 initialisieren
+161118-181407-KY053_Sensor-31-DEBUG-KY-053 sensor not detected. Check wiring. Try again in: 3 seconds
+161118-181410-KY053_Sensor-26-DEBUG-BMP085 initialisieren
+161118-181410-KY053_Sensor-31-DEBUG-KY-053 sensor not detected. Check wiring. Try again in: 9 seconds
+161118-181419-KY053_Sensor-26-DEBUG-BMP085 initialisieren
+161118-181419-KY053_Sensor-31-DEBUG-KY-053 sensor not detected. Check wiring. Try again in: 27 seconds
+161118-181446-KY053_Sensor-26-DEBUG-BMP085 initialisieren
+161118-181446-KY053_Sensor-31-DEBUG-KY-053 sensor not detected. Check wiring. Try again in: 81 seconds
+161118-183812-KY053_Sensor-19-DEBUG-KY053 constructor started
+161118-183812-KY053_Sensor-26-DEBUG-BMP085 initialisieren
+161118-183812-KY053_Sensor-29-DEBUG-KY-053 sensor successful created
+161118-183812-KY053_Sensor-41-DEBUG-KY053 constructor ended
+161118-183915-jrWetterstation-44-DEBUG-Program stopped by keyboard interupt
+161118-184420-KY053_Sensor-19-DEBUG-KY053 constructor started
+161118-184420-KY053_Sensor-26-DEBUG-BMP085 initialisieren
+161118-184420-KY053_Sensor-29-DEBUG-KY-053 sensor successful created
+161118-184420-KY053_Sensor-41-DEBUG-KY053 constructor ended
+161118-184453-KY053_Sensor-19-DEBUG-KY053 constructor started
+161118-184453-KY053_Sensor-26-DEBUG-BMP085 initialisieren
+161118-184453-KY053_Sensor-29-DEBUG-KY-053 sensor successful created
+161118-184453-KY053_Sensor-41-DEBUG-KY053 constructor ended
+161118-184453-KY053_Sensor-56-INFO-Temp: 21.2 Druck: 990.24
+161118-184557-jrWetterstation-44-DEBUG-Program stopped by keyboard interupt
+161118-184719-KY053_Sensor-19-DEBUG-KY053 constructor started
+161118-184719-KY053_Sensor-26-DEBUG-BMP085 initialisieren
+161118-184719-KY053_Sensor-29-DEBUG-KY-053 sensor successful created
+161118-184719-KY053_Sensor-41-DEBUG-KY053 constructor ended
+161118-184719-KY053_Sensor-56-INFO-Temp: 21.2 Druck: 990.33
+161118-194721-KY053_Sensor-56-INFO-Temp: 78.2 Druck: 990.48
+161118-194732-KY053_Sensor-56-INFO-Temp: 21.3 Druck: 990.51
+161118-214736-KY053_Sensor-56-INFO-Temp: 108.9 Druck: 992.65
+161118-214747-KY053_Sensor-56-INFO-Temp: 21.4 Druck: 992.71
+161118-215415-KY053_Sensor-23-DEBUG-KY053 constructor started
+161118-215415-KY053_Sensor-30-DEBUG-BMP085 initialisieren
+161118-215415-KY053_Sensor-33-DEBUG-KY-053 sensor successful created
+161118-215415-KY053_Sensor-45-DEBUG-KY053 constructor ended
+161118-215415-KY053_Sensor-62-INFO-Temp: 21.4 Druck: 992.86
+161118-220153-KY053_Sensor-23-DEBUG-KY053 constructor started
+161118-220153-KY053_Sensor-30-DEBUG-BMP085 initialisieren
+161118-220153-KY053_Sensor-33-DEBUG-KY-053 sensor successful created
+161118-220153-KY053_Sensor-45-DEBUG-KY053 constructor ended
+161118-220153-KY053_Sensor-62-INFO-Temp: 21.4 Druck: 993.11
+161118-220153-KY053_Sensor-79-INFO-Temp: 21.4 Druck: 993.11
+161118-221041-jrWetterstation-44-DEBUG-Program stopped by keyboard interupt
+161118-221047-KY053_Sensor-23-DEBUG-KY053 constructor started
+161118-221047-KY053_Sensor-30-DEBUG-BMP085 initialisieren
+161118-221048-KY053_Sensor-33-DEBUG-KY-053 sensor successful created
+161118-221048-KY053_Sensor-45-DEBUG-KY053 constructor ended
+161118-221048-KY053_Sensor-62-INFO-Temp: 21.4 Druck: 993.15
+161118-221048-Mail-15-DEBUG-Mail constructor
+161118-221048-Mail-29-DEBUG-From: robert.jonas@gmx.at
+To: robert.jonas@gmx.at
+Date: Fri Nov 18 22:10:48 2016
+Subject: Temperatur
+
+Aktuelle Temperatur: 21.4 Minimum: 21.4 Maximum: 21.4 2016-11-18 22:10:48.061586
+161118-221048-KY053_Sensor-79-INFO-Temp: 21.4 Druck: 993.15
+161118-221048-Mail-15-DEBUG-Mail constructor
+161118-221048-Mail-48-DEBUG-From: robert.jonas@gmx.at
+To: robert.jonas@gmx.at
+Date: Fri Nov 18 22:10:48 2016
+Subject: Druck
+
+Aktueller Druck: 993.15 Minimum: 993.15 Maximum: 993.15 2016-11-18 22:10:48.635807
+161118-221205-jrWetterstation-44-DEBUG-Program stopped by keyboard interupt
+161118-222346-KY053_Sensor-23-DEBUG-KY053 constructor started
+161118-222346-KY053_Sensor-30-DEBUG-BMP085 initialisieren
+161118-222346-KY053_Sensor-33-DEBUG-KY-053 sensor successful created
+161118-222346-KY053_Sensor-45-DEBUG-KY053 constructor ended
+161118-222346-KY053_Sensor-77-DEBUG-Temperatur jitter: actTemp: 21.4 lastTemp: -99.0
+161118-222346-KY053_Sensor-83-INFO-Temp: 21.4 Druck: 993.13
+161118-222346-Mail-15-DEBUG-Mail constructor
+161118-222346-Mail-48-DEBUG-From: robert.jonas@gmx.at
+To: robert.jonas@gmx.at
+Date: Fri Nov 18 22:23:46 2016
+Subject: Druck
+
+Aktueller Druck: 993.13 Minimum: 993.13 Maximum: 993.13 2016-11-18 22:23:46.081838
+161118-222351-KY053_Sensor-77-DEBUG-Temperatur jitter: actTemp: 21.4 lastTemp: -99.0
+161118-222356-KY053_Sensor-77-DEBUG-Temperatur jitter: actTemp: 21.4 lastTemp: -99.0
+161118-222401-KY053_Sensor-77-DEBUG-Temperatur jitter: actTemp: 21.4 lastTemp: -99.0
+161118-222406-KY053_Sensor-77-DEBUG-Temperatur jitter: actTemp: 21.4 lastTemp: -99.0
+161118-222411-KY053_Sensor-77-DEBUG-Temperatur jitter: actTemp: 21.4 lastTemp: -99.0
+161118-222416-KY053_Sensor-77-DEBUG-Temperatur jitter: actTemp: 21.4 lastTemp: -99.0
+161118-222421-KY053_Sensor-77-DEBUG-Temperatur jitter: actTemp: 21.4 lastTemp: -99.0
+161118-222426-KY053_Sensor-77-DEBUG-Temperatur jitter: actTemp: 21.4 lastTemp: -99.0
+161118-222431-KY053_Sensor-77-DEBUG-Temperatur jitter: actTemp: 21.4 lastTemp: -99.0
+161118-222436-KY053_Sensor-77-DEBUG-Temperatur jitter: actTemp: 21.4 lastTemp: -99.0
+161118-222441-KY053_Sensor-77-DEBUG-Temperatur jitter: actTemp: 21.4 lastTemp: -99.0
+161118-222447-KY053_Sensor-77-DEBUG-Temperatur jitter: actTemp: 21.4 lastTemp: -99.0
+161118-222452-KY053_Sensor-77-DEBUG-Temperatur jitter: actTemp: 21.4 lastTemp: -99.0
+161118-222457-KY053_Sensor-77-DEBUG-Temperatur jitter: actTemp: 21.4 lastTemp: -99.0
+161118-222502-KY053_Sensor-77-DEBUG-Temperatur jitter: actTemp: 21.4 lastTemp: -99.0
+161118-222507-KY053_Sensor-77-DEBUG-Temperatur jitter: actTemp: 21.4 lastTemp: -99.0
+161118-222512-KY053_Sensor-77-DEBUG-Temperatur jitter: actTemp: 21.4 lastTemp: -99.0
+161118-222517-KY053_Sensor-77-DEBUG-Temperatur jitter: actTemp: 21.4 lastTemp: -99.0
+161118-222522-KY053_Sensor-77-DEBUG-Temperatur jitter: actTemp: 21.4 lastTemp: -99.0
+161118-222527-KY053_Sensor-77-DEBUG-Temperatur jitter: actTemp: 21.4 lastTemp: -99.0
+161118-222532-KY053_Sensor-77-DEBUG-Temperatur jitter: actTemp: 21.4 lastTemp: -99.0
+161118-222537-KY053_Sensor-77-DEBUG-Temperatur jitter: actTemp: 21.4 lastTemp: -99.0
+161118-222542-KY053_Sensor-77-DEBUG-Temperatur jitter: actTemp: 21.4 lastTemp: -99.0
+161118-222547-KY053_Sensor-77-DEBUG-Temperatur jitter: actTemp: 21.4 lastTemp: -99.0
+161118-222552-KY053_Sensor-77-DEBUG-Temperatur jitter: actTemp: 21.4 lastTemp: -99.0
+161118-222557-KY053_Sensor-77-DEBUG-Temperatur jitter: actTemp: 21.4 lastTemp: -99.0
+161118-222602-KY053_Sensor-77-DEBUG-Temperatur jitter: actTemp: 21.4 lastTemp: -99.0
+161118-222607-KY053_Sensor-77-DEBUG-Temperatur jitter: actTemp: 21.4 lastTemp: -99.0
+161118-222612-KY053_Sensor-77-DEBUG-Temperatur jitter: actTemp: 21.4 lastTemp: -99.0
+161118-222617-KY053_Sensor-77-DEBUG-Temperatur jitter: actTemp: 21.4 lastTemp: -99.0
+161118-222622-KY053_Sensor-77-DEBUG-Temperatur jitter: actTemp: 21.4 lastTemp: -99.0
+161118-222627-KY053_Sensor-77-DEBUG-Temperatur jitter: actTemp: 21.4 lastTemp: -99.0
+161118-222632-KY053_Sensor-77-DEBUG-Temperatur jitter: actTemp: 21.4 lastTemp: -99.0
+161118-222637-KY053_Sensor-77-DEBUG-Temperatur jitter: actTemp: 21.4 lastTemp: -99.0
+161118-222642-KY053_Sensor-77-DEBUG-Temperatur jitter: actTemp: 21.4 lastTemp: -99.0
+161118-222647-KY053_Sensor-77-DEBUG-Temperatur jitter: actTemp: 21.4 lastTemp: -99.0
+161118-222652-KY053_Sensor-77-DEBUG-Temperatur jitter: actTemp: 21.4 lastTemp: -99.0
+161118-222657-KY053_Sensor-77-DEBUG-Temperatur jitter: actTemp: 21.4 lastTemp: -99.0
+161118-222702-KY053_Sensor-77-DEBUG-Temperatur jitter: actTemp: 21.4 lastTemp: -99.0
+161118-222707-KY053_Sensor-77-DEBUG-Temperatur jitter: actTemp: 21.4 lastTemp: -99.0
+161118-222712-KY053_Sensor-77-DEBUG-Temperatur jitter: actTemp: 21.4 lastTemp: -99.0
+161118-222717-KY053_Sensor-77-DEBUG-Temperatur jitter: actTemp: 21.4 lastTemp: -99.0
+161118-222722-KY053_Sensor-77-DEBUG-Temperatur jitter: actTemp: 21.4 lastTemp: -99.0
+161118-222727-KY053_Sensor-77-DEBUG-Temperatur jitter: actTemp: 21.4 lastTemp: -99.0
+161118-222730-jrWetterstation-44-DEBUG-Program stopped by keyboard interupt
+161118-222738-KY053_Sensor-23-DEBUG-KY053 constructor started
+161118-222738-KY053_Sensor-30-DEBUG-BMP085 initialisieren
+161118-222738-KY053_Sensor-33-DEBUG-KY-053 sensor successful created
+161118-222738-KY053_Sensor-45-DEBUG-KY053 constructor ended
+161118-222738-KY053_Sensor-76-DEBUG-Temperatur jitter: actTemp: 21.4 lastTemp: -99.0
+161118-222738-KY053_Sensor-83-INFO-Temp: 21.4 Druck: 993.14
+161118-222738-Mail-15-DEBUG-Mail constructor
+161118-222738-Mail-48-DEBUG-From: robert.jonas@gmx.at
+To: robert.jonas@gmx.at
+Date: Fri Nov 18 22:27:38 2016
+Subject: Druck
+
+Aktueller Druck: 993.14 Minimum: 993.14 Maximum: 993.14 2016-11-18 22:27:38.725129
+161118-222834-KY053_Sensor-64-INFO-Temp: 25.0 Druck: 993.13
+161118-222834-Mail-15-DEBUG-Mail constructor
+161118-222834-Mail-29-DEBUG-From: robert.jonas@gmx.at
+To: robert.jonas@gmx.at
+Date: Fri Nov 18 22:28:34 2016
+Subject: Temperatur
+
+Aktuelle Temperatur: 25.0 Minimum: 21.4 Maximum: 25.0 2016-11-18 22:28:34.831012
+161118-222840-KY053_Sensor-64-INFO-Temp: 23.1 Druck: 993.23
+161118-222840-Mail-15-DEBUG-Mail constructor
+161118-222840-Mail-29-DEBUG-From: robert.jonas@gmx.at
+To: robert.jonas@gmx.at
+Date: Fri Nov 18 22:28:40 2016
+Subject: Temperatur
+
+Aktuelle Temperatur: 23.1 Minimum: 21.4 Maximum: 25.0 2016-11-18 22:28:40.692473
+161118-222851-KY053_Sensor-64-INFO-Temp: 22.3 Druck: 993.21
+161118-222851-Mail-15-DEBUG-Mail constructor
+161118-222851-Mail-29-DEBUG-From: robert.jonas@gmx.at
+To: robert.jonas@gmx.at
+Date: Fri Nov 18 22:28:51 2016
+Subject: Temperatur
+
+Aktuelle Temperatur: 22.3 Minimum: 21.4 Maximum: 25.0 2016-11-18 22:28:51.338368
+161118-222927-KY053_Sensor-64-INFO-Temp: 21.7 Druck: 993.26
+161118-222927-Mail-15-DEBUG-Mail constructor
+161118-222927-Mail-29-DEBUG-From: robert.jonas@gmx.at
+To: robert.jonas@gmx.at
+Date: Fri Nov 18 22:29:27 2016
+Subject: Temperatur
+
+Aktuelle Temperatur: 21.7 Minimum: 21.4 Maximum: 25.0 2016-11-18 22:29:27.160856
+161118-224447-KY053_Sensor-64-INFO-Temp: 24.6 Druck: 993.64
+161118-224447-Mail-15-DEBUG-Mail constructor
+161118-224447-Mail-29-DEBUG-From: robert.jonas@gmx.at
+To: robert.jonas@gmx.at
+Date: Fri Nov 18 22:44:47 2016
+Subject: Temperatur
+
+Aktuelle Temperatur: 24.6 Minimum: 21.4 Maximum: 25.0 2016-11-18 22:44:47.990648
+161118-224453-KY053_Sensor-64-INFO-Temp: 25.9 Druck: 993.74
+161118-224453-Mail-15-DEBUG-Mail constructor
+161118-224453-Mail-29-DEBUG-From: robert.jonas@gmx.at
+To: robert.jonas@gmx.at
+Date: Fri Nov 18 22:44:53 2016
+Subject: Temperatur
+
+Aktuelle Temperatur: 25.9 Minimum: 21.4 Maximum: 25.9 2016-11-18 22:44:53.594251
+161118-224459-KY053_Sensor-64-INFO-Temp: 24.3 Druck: 993.75
+161118-224459-Mail-15-DEBUG-Mail constructor
+161118-224459-Mail-29-DEBUG-From: robert.jonas@gmx.at
+To: robert.jonas@gmx.at
+Date: Fri Nov 18 22:44:59 2016
+Subject: Temperatur
+
+Aktuelle Temperatur: 24.3 Minimum: 21.4 Maximum: 25.9 2016-11-18 22:44:59.184018
+161118-224504-KY053_Sensor-64-INFO-Temp: 23.5 Druck: 993.76
+161118-224504-Mail-15-DEBUG-Mail constructor
+161118-224504-Mail-29-DEBUG-From: robert.jonas@gmx.at
+To: robert.jonas@gmx.at
+Date: Fri Nov 18 22:45:04 2016
+Subject: Temperatur
+
+Aktuelle Temperatur: 23.5 Minimum: 21.4 Maximum: 25.9 2016-11-18 22:45:04.824876
+161118-224515-KY053_Sensor-64-INFO-Temp: 22.6 Druck: 993.77
+161118-224515-Mail-15-DEBUG-Mail constructor
+161118-224515-Mail-29-DEBUG-From: robert.jonas@gmx.at
+To: robert.jonas@gmx.at
+Date: Fri Nov 18 22:45:15 2016
+Subject: Temperatur
+
+Aktuelle Temperatur: 22.6 Minimum: 21.4 Maximum: 25.9 2016-11-18 22:45:15.418461
+161118-224611-KY053_Sensor-64-INFO-Temp: 22.0 Druck: 993.81
+161118-224611-Mail-15-DEBUG-Mail constructor
+161118-224611-Mail-29-DEBUG-From: robert.jonas@gmx.at
+To: robert.jonas@gmx.at
+Date: Fri Nov 18 22:46:11 2016
+Subject: Temperatur
+
+Aktuelle Temperatur: 22.0 Minimum: 21.4 Maximum: 25.9 2016-11-18 22:46:11.512190
+161118-225038-KY053_Sensor-64-INFO-Temp: 21.4 Druck: 993.8
+161118-225038-Mail-15-DEBUG-Mail constructor
+161118-225038-Mail-29-DEBUG-From: robert.jonas@gmx.at
+To: robert.jonas@gmx.at
+Date: Fri Nov 18 22:50:38 2016
+Subject: Temperatur
+
+Aktuelle Temperatur: 21.4 Minimum: 21.4 Maximum: 25.9 2016-11-18 22:50:38.656972
+161118-225552-KY053_Sensor-23-DEBUG-KY053 constructor started
+161118-225552-KY053_Sensor-30-DEBUG-BMP085 initialisieren
+161118-225552-KY053_Sensor-33-DEBUG-KY-053 sensor successful created
+161118-225552-KY053_Sensor-45-DEBUG-KY053 constructor ended
+161118-225552-KY053_Sensor-76-DEBUG-Temperatur jitter: actTemp: 21.4 lastTemp: -99.0
+161118-225552-KY053_Sensor-83-INFO-Temp: 21.4 Druck: 993.86
+161118-225552-Mail-15-DEBUG-Mail constructor
+161118-225552-Mail-48-DEBUG-From: robert.jonas@gmx.at
+To: robert.jonas@gmx.at
+Date: Fri Nov 18 22:55:52 2016
+Subject: Druck
+
+Aktueller Druck: 993.86 Minimum: 993.86 Maximum: 993.86 2016-11-18 22:55:52.755023
+161118-235132-KY053_Sensor-83-INFO-Temp: 21.2 Druck: 994.87
+161118-235132-Mail-15-DEBUG-Mail constructor
+161118-235132-Mail-48-DEBUG-From: robert.jonas@gmx.at
+To: robert.jonas@gmx.at
+Date: Fri Nov 18 23:51:32 2016
+Subject: Druck
+
+Aktueller Druck: 994.87 Minimum: 993.8 Maximum: 994.87 2016-11-18 23:51:32.867108
+161119-012114-KY053_Sensor-83-INFO-Temp: 21.0 Druck: 995.88
+161119-012114-Mail-15-DEBUG-Mail constructor
+161119-012114-Mail-48-DEBUG-From: robert.jonas@gmx.at
+To: robert.jonas@gmx.at
+Date: Sat Nov 19 01:21:14 2016
+Subject: Druck
+
+Aktueller Druck: 995.88 Minimum: 993.8 Maximum: 995.88 2016-11-19 01:21:14.786782
+161119-044230-KY053_Sensor-83-INFO-Temp: 21.1 Druck: 994.87
+161119-044230-Mail-15-DEBUG-Mail constructor
+161119-044230-Mail-48-DEBUG-From: robert.jonas@gmx.at
+To: robert.jonas@gmx.at
+Date: Sat Nov 19 04:42:30 2016
+Subject: Druck
+
+Aktueller Druck: 994.87 Minimum: 993.8 Maximum: 996.07 2016-11-19 04:42:30.814004
+161119-071735-KY053_Sensor-83-INFO-Temp: 21.2 Druck: 993.86
+161119-071735-Mail-15-DEBUG-Mail constructor
+161119-071735-Mail-48-DEBUG-From: robert.jonas@gmx.at
+To: robert.jonas@gmx.at
+Date: Sat Nov 19 07:17:35 2016
+Subject: Druck
+
+Aktueller Druck: 993.86 Minimum: 993.8 Maximum: 996.07 2016-11-19 07:17:35.601880
+161119-083608-KY053_Sensor-83-INFO-Temp: 21.3 Druck: 992.84
+161119-083608-Mail-15-DEBUG-Mail constructor
+161119-083608-Mail-48-DEBUG-From: robert.jonas@gmx.at
+To: robert.jonas@gmx.at
+Date: Sat Nov 19 08:36:08 2016
+Subject: Druck
+
+Aktueller Druck: 992.84 Minimum: 992.84 Maximum: 996.07 2016-11-19 08:36:08.694228
+161119-090715-KY053_Sensor-64-INFO-Temp: 23.6 Druck: 992.69
+161119-090715-Mail-15-DEBUG-Mail constructor
+161119-090715-Mail-29-DEBUG-From: robert.jonas@gmx.at
+To: robert.jonas@gmx.at
+Date: Sat Nov 19 09:07:15 2016
+Subject: Temperatur
+
+Aktuelle Temperatur: 23.6 Minimum: 21.0 Maximum: 23.6 2016-11-19 09:07:15.139204
+161119-090720-KY053_Sensor-64-INFO-Temp: 22.8 Druck: 992.71
+161119-090720-Mail-15-DEBUG-Mail constructor
+161119-090720-Mail-29-DEBUG-From: robert.jonas@gmx.at
+To: robert.jonas@gmx.at
+Date: Sat Nov 19 09:07:20 2016
+Subject: Temperatur
+
+Aktuelle Temperatur: 22.8 Minimum: 21.0 Maximum: 23.6 2016-11-19 09:07:20.812327
+161119-090731-KY053_Sensor-64-INFO-Temp: 22.2 Druck: 992.64
+161119-090731-Mail-15-DEBUG-Mail constructor
+161119-090731-Mail-29-DEBUG-From: robert.jonas@gmx.at
+To: robert.jonas@gmx.at
+Date: Sat Nov 19 09:07:31 2016
+Subject: Temperatur
+
+Aktuelle Temperatur: 22.2 Minimum: 21.0 Maximum: 23.6 2016-11-19 09:07:31.418169
+161119-090822-KY053_Sensor-64-INFO-Temp: 21.6 Druck: 992.59
+161119-090822-Mail-15-DEBUG-Mail constructor
+161119-090822-Mail-29-DEBUG-From: robert.jonas@gmx.at
+To: robert.jonas@gmx.at
+Date: Sat Nov 19 09:08:22 2016
+Subject: Temperatur
+
+Aktuelle Temperatur: 21.6 Minimum: 21.0 Maximum: 23.6 2016-11-19 09:08:22.697298
+161119-100713-KY053_Sensor-83-INFO-Temp: 21.4 Druck: 991.81
+161119-100713-Mail-15-DEBUG-Mail constructor
+161119-100713-Mail-48-DEBUG-From: robert.jonas@gmx.at
+To: robert.jonas@gmx.at
+Date: Sat Nov 19 10:07:13 2016
+Subject: Druck
+
+Aktueller Druck: 991.81 Minimum: 991.81 Maximum: 996.07 2016-11-19 10:07:13.767474
+161119-102616-KY053_Sensor-64-INFO-Temp: 23.6 Druck: 991.7
+161119-102616-Mail-15-DEBUG-Mail constructor
+161119-102616-Mail-29-DEBUG-From: robert.jonas@gmx.at
+To: robert.jonas@gmx.at
+Date: Sat Nov 19 10:26:16 2016
+Subject: Temperatur
+
+Aktuelle Temperatur: 23.6 Minimum: 21.0 Maximum: 23.6 2016-11-19 10:26:16.053029
+161119-111604-KY053_Sensor-23-DEBUG-KY053 constructor started
+161119-111604-KY053_Sensor-30-DEBUG-BMP085 initialisieren
+161119-111604-KY053_Sensor-33-DEBUG-KY-053 sensor successful created
+161119-111604-KY053_Sensor-45-DEBUG-KY053 constructor ended
+161119-111604-KY053_Sensor-76-DEBUG-Temperatur jitter: actTemp: 21.3 lastTemp: -99.0
+161119-111604-KY053_Sensor-83-INFO-Temp: 21.3 Druck: 990.5
+161119-111604-Mail-15-DEBUG-Mail constructor
+161119-111604-Mail-48-DEBUG-From: robert.jonas@gmx.at
+To: robert.jonas@gmx.at
+Date: Sat Nov 19 11:16:04 2016
+Subject: Druck
+
+Aktueller Druck: 990.5 Minimum: 990.5 Maximum: 990.5 2016-11-19 11:16:04.546893
+161119-111644-jrWetterstation-49-DEBUG-Global: Program stopped by external interupt
+161119-112107-KY053_Sensor-23-DEBUG-KY053 constructor started
+161119-112107-KY053_Sensor-29-DEBUG-BMP085 initialisieren
+161119-112107-KY053_Sensor-32-DEBUG-KY-053 sensor successful created
+161119-112107-KY053_Sensor-42-DEBUG-KY053 constructor ended
+161119-112107-KY053_Sensor-73-DEBUG-Temperatur jitter: actTemp: 21.3 lastTemp: -99.0
+161119-112107-KY053_Sensor-80-INFO-Temp: 21.3 Druck: 990.39
+161119-112107-Mail-15-DEBUG-Mail constructor
+161119-112107-Mail-48-DEBUG-From: robert.jonas@gmx.at
+To: robert.jonas@gmx.at
+Date: Sat Nov 19 11:21:07 2016
+Subject: Druck
+
+Aktueller Druck: 990.39 Minimum: 990.39 Maximum: 990.39 2016-11-19 11:21:07.815640
+161119-112147-jrWetterstation-49-DEBUG-Global: Program stopped by external interrupt
+161119-112232-KY053_Sensor-23-DEBUG-KY053 constructor started
+161119-112232-KY053_Sensor-29-DEBUG-BMP085 initialisieren
+161119-112232-KY053_Sensor-32-DEBUG-KY-053 sensor successful created
+161119-112232-KY053_Sensor-42-DEBUG-KY053 constructor ended
+161119-112232-KY053_Sensor-73-DEBUG-Temperatur jitter: actTemp: 21.3 lastTemp: -99.0
+161119-112232-KY053_Sensor-80-INFO-Temp: 21.3 Druck: 990.29
+161119-112232-Mail-15-DEBUG-Mail constructor
+161119-112232-Mail-48-DEBUG-From: robert.jonas@gmx.at
+To: robert.jonas@gmx.at
+Date: Sat Nov 19 11:22:32 2016
+Subject: Druck
+
+Aktueller Druck: 990.29 Minimum: 990.29 Maximum: 990.29 2016-11-19 11:22:32.911685
+161119-112355-KY053_Sensor-23-DEBUG-KY053 constructor started
+161119-112355-KY053_Sensor-29-DEBUG-BMP085 initialisieren
+161119-112356-KY053_Sensor-32-DEBUG-KY-053 sensor successful created
+161119-112356-KY053_Sensor-42-DEBUG-KY053 constructor ended
+161119-112356-KY053_Sensor-73-DEBUG-Temperatur jitter: actTemp: 21.3 lastTemp: -99.0
+161119-112356-KY053_Sensor-80-INFO-Temp: 21.3 Druck: 990.37
+161119-112356-Mail-15-DEBUG-Mail constructor
+161119-112356-Mail-48-DEBUG-From: robert.jonas@gmx.at
+To: robert.jonas@gmx.at
+Date: Sat Nov 19 11:23:56 2016
+Subject: Druck
+
+Aktueller Druck: 990.37 Minimum: 990.37 Maximum: 990.37 2016-11-19 11:23:56.048024
+161119-112440-KY053_Sensor-23-DEBUG-KY053 constructor started
+161119-112440-KY053_Sensor-29-DEBUG-BMP085 initialisieren
+161119-112440-KY053_Sensor-32-DEBUG-KY-053 sensor successful created
+161119-112440-KY053_Sensor-42-DEBUG-KY053 constructor ended
+161119-112440-KY053_Sensor-73-DEBUG-Temperatur jitter: actTemp: 21.3 lastTemp: -99.0
+161119-112440-KY053_Sensor-80-INFO-Temp: 21.3 Druck: 990.29
+161119-112440-Mail-15-DEBUG-Mail constructor
+161119-112440-Mail-48-DEBUG-From: robert.jonas@gmx.at
+To: robert.jonas@gmx.at
+Date: Sat Nov 19 11:24:40 2016
+Subject: Druck
+
+Aktueller Druck: 990.29 Minimum: 990.29 Maximum: 990.29 2016-11-19 11:24:40.577363
+161119-115500-KY053_Sensor-80-INFO-Temp: 21.3 DruckChange: 990.39
+161119-115829-KY053_Sensor-80-ERROR-Temp: 21.3 DruckChange: 990.34
+161119-120139-jrWetterstation-32-INFO-Wetterstation gestartet
+161119-120139-KY053_Sensor-80-ERROR-Temp: 21.2 DruckChange: 990.3
+161119-120223-jrWetterstation-50-ERROR-Global: Program stopped by external interrupt
+161119-120526-jrWetterstation-32-INFO-
+Wetterstation gestartet
+161119-120526-KY053_Sensor-80-ERROR-Temp: 21.2 DruckChange: 990.29
+161119-120635-jrWetterstation-50-ERROR-Global: Program stopped by external interrupt
+161119-120834-KY053_Sensor-23-DEBUG-KY053 constructor started
+161119-120834-KY053_Sensor-29-DEBUG-BMP085 initialisieren
+161119-120834-KY053_Sensor-32-DEBUG-KY-053 sensor successful created
+161119-120834-KY053_Sensor-42-DEBUG-KY053 constructor ended
+161119-120834-jrWetterstation-32-INFO-
+
+Wetterstation gestartet
+
+161119-120835-KY053_Sensor-73-DEBUG-Temperatur jitter: actTemp: 21.2 lastTemp: -99.0
+161119-120835-KY053_Sensor-80-INFO-Temp: 21.2 DruckChange: 990.21
+161119-120835-Mail-15-DEBUG-Mail constructor
+161119-120835-Mail-48-DEBUG-From: robert.jonas@gmx.at
+To: robert.jonas@gmx.at
+Date: Sat Nov 19 12:08:35 2016
+Subject: Druck
+
+Aktueller Druck: 990.21 Minimum: 990.21 Maximum: 990.21 2016-11-19 12:08:35.003419
+161119-120931-jrWetterstation-50-ERROR-Global: Program stopped by external interrupt
+161216-170431-jrWetterstation-32-INFO-
+
+Wetterstation gestartet
+
+161216-170431-KY053_Sensor-80-INFO-Temp: 21.6 DruckChange: 1016.4
+161216-182440-KY053_Sensor-61-INFO-TempChange: 23.6 Druck: 1016.57
+161216-182440-jrWetterstation-45-ERROR-Global: unhandled exception. Continue program
+161216-184534-jrWetterstation-32-INFO-
+
+Wetterstation gestartet
+
+161216-184534-KY053_Sensor-84-INFO-Temp: 22.2 DruckChange: 1016.62
+161216-184603-jrWetterstation-50-ERROR-Global: Program stopped by external interrupt
+161216-184818-jrWetterstation-32-INFO-
+
+Wetterstation gestartet
+
+161216-184818-jrWetterstation-45-ERROR-Global: unhandled exception. Continue program
+161216-184911-jrWetterstation-32-INFO-
+
+Wetterstation gestartet
+
+161216-184911-jrWetterstation-45-ERROR-Global: unhandled exception. Continue program
+161216-185206-jrWetterstation-32-INFO-
+
+Wetterstation gestartet
+
+161216-185206-jrWetterstation-45-ERROR-Global: unhandled exception. Continue program
+161216-185324-jrWetterstation-32-INFO-
+
+Wetterstation gestartet
+
+161216-185324-jrWetterstation-45-ERROR-Global: unhandled exception. Continue program
+161216-185449-jrWetterstation-32-INFO-
+
+Wetterstation gestartet
+
+161216-185449-KY053_Sensor-86-INFO-Temp: 22.2 DruckChange: 1016.74
+161216-185525-jrWetterstation-50-ERROR-Global: Program stopped by external interrupt
+161216-190725-jrWetterstation-32-INFO-
+
+Wetterstation gestartet
+
+161216-190725-KY053_Sensor-86-INFO-Temp: 22.3 DruckChange: 1016.76
+161216-192203-KY053_Sensor-67-INFO-TempChange: 27.2 Druck: 1016.84
+161216-192203-jrWetterstation-45-ERROR-Global: unhandled exception. Continue program
+161216-192515-jrWetterstation-32-INFO-
+
+Wetterstation gestartet
+
+161216-192515-KY053_Sensor-86-INFO-Temp: 22.7 DruckChange: 1016.82
+161216-193938-KY053_Sensor-67-INFO-TempChange: 22.1 Druck: 1016.77
+161216-193938-jrWetterstation-45-ERROR-Global: unhandled exception. Continue program
+161216-195640-jrWetterstation-33-INFO-
+
+Wetterstation gestartet
+
+161216-195640-KY053_Sensor-86-INFO-Temp: 22.0 DruckChange: 1016.79
+161216-195656-KY053_Sensor-67-INFO-TempChange: 23.6 Druck: 1016.82
+161216-195656-jrWetterstation-48-ERROR-<class 'sqlite3.OperationalError'>
+161216-201454-jrWetterstation-34-INFO-
+
+Wetterstation gestartet
+
+161216-201454-KY053_Sensor-86-INFO-Temp: 22.3 DruckChange: 1016.77
+161216-201520-KY053_Sensor-67-INFO-TempChange: 24.2 Druck: 1016.78
+161216-201520-jrWetterstation-49-ERROR-<class 'sqlite3.OperationalError'>
+161216-201621-jrWetterstation-34-INFO-
+
+Wetterstation gestartet
+
+161216-201621-KY053_Sensor-86-INFO-Temp: 22.5 DruckChange: 1016.93
+161216-201641-KY053_Sensor-67-INFO-TempChange: 25.0 Druck: 1016.91
+161216-201641-jrWetterstation-49-ERROR-<class 'sqlite3.OperationalError'>
+161216-201732-jrWetterstation-34-INFO-
+
+Wetterstation gestartet
+
+161216-201732-KY053_Sensor-86-INFO-Temp: 23.0 DruckChange: 1016.95
+161216-201737-KY053_Sensor-67-INFO-TempChange: 24.3 Druck: 1016.99
+161216-201737-jrWetterstation-49-ERROR-<class 'sqlite3.OperationalError'>
+161216-202108-jrWetterstation-34-INFO-
+
+Wetterstation gestartet
+
+161216-202108-KY053_Sensor-86-INFO-Temp: 22.7 DruckChange: 1016.91
+161216-202129-KY053_Sensor-67-INFO-TempChange: 24.1 Druck: 1016.95
+161216-202129-jrWetterstation-49-ERROR-<class 'sqlite3.OperationalError'>
+161216-202916-jrWetterstation-34-INFO-
+
+Wetterstation gestartet
+
+161216-202916-KY053_Sensor-86-INFO-Temp: 22.6 DruckChange: 1016.8
+161216-202927-KY053_Sensor-67-INFO-TempChange: 23.5 Druck: 1016.88
+161216-203026-jrWetterstation-34-INFO-
+
+Wetterstation gestartet
+
+161216-203026-KY053_Sensor-86-INFO-Temp: 22.7 DruckChange: 1016.84
+161216-203037-KY053_Sensor-67-INFO-TempChange: 24.2 Druck: 1016.86
+161216-203037-jrWetterstation-50-ERROR-Traceback (most recent call last):
+  File "jrWetterstation.py", line 42, in <module>
+    ky053.save()
+  File "/home/robert/jrWetterstation/KY053_Sensor.py", line 72, in save
+    cur.execute("INSERT INTO tempLogs(temperatur) VALUES(?)",(self.actTemp,))
+OperationalError: no such table: tempLogs
+
+161216-203154-jrWetterstation-34-INFO-
+
+Wetterstation gestartet
+
+161216-203154-KY053_Sensor-86-INFO-Temp: 22.8 DruckChange: 1016.9
+161216-203205-KY053_Sensor-67-INFO-TempChange: 25.5 Druck: 1016.9
+161216-203211-KY053_Sensor-67-INFO-TempChange: 24.8 Druck: 1017.0
+161216-203223-KY053_Sensor-67-INFO-TempChange: 24.2 Druck: 1016.95
+161216-203245-KY053_Sensor-67-INFO-TempChange: 23.5 Druck: 1016.91
+161216-203250-jrWetterstation-57-ERROR-Global: Program stopped by external interrupt
+161216-203352-jrWetterstation-34-INFO-
+
+Wetterstation gestartet
+
+161216-203352-KY053_Sensor-86-INFO-Temp: 22.9 DruckChange: 1016.98
+161216-203745-KY053_Sensor-67-INFO-TempChange: 26.1 Druck: 1016.96
+161216-203756-KY053_Sensor-67-INFO-TempChange: 25.2 Druck: 1016.99
+161216-203807-KY053_Sensor-67-INFO-TempChange: 24.4 Druck: 1017.03
+161216-203823-KY053_Sensor-67-INFO-TempChange: 23.7 Druck: 1017.08
+161216-203910-KY053_Sensor-67-INFO-TempChange: 23.1 Druck: 1017.03
+161216-204524-KY053_Sensor-67-INFO-TempChange: 22.5 Druck: 1016.93
+161216-210756-KY053_Sensor-67-INFO-TempChange: 21.9 Druck: 1016.88
+161216-212618-jrWetterstation-34-INFO-
+
+Wetterstation gestartet
+
+161216-212618-KY053_Sensor-89-INFO-Temp: 21.9 DruckChange: 1037.06555401
+161216-212734-jrWetterstation-57-ERROR-Global: Program stopped by external interrupt
+161216-212956-jrWetterstation-34-INFO-
+
+Wetterstation gestartet
+
+161216-212956-KY053_Sensor-89-INFO-Temp: 22.0 DruckChange: 1037.11654954
+161216-213951-KY053_Sensor-70-INFO-TempChange: 23.2 Druck: 1037.24913793
+161216-213957-KY053_Sensor-70-INFO-TempChange: 22.6 Druck: 1037.25933703
+161216-214833-KY053_Sensor-70-INFO-TempChange: 22.0 Druck: 1037.30013346
+161216-232650-KY053_Sensor-70-INFO-TempChange: 21.4 Druck: 1037.3613281
+161217-021741-KY053_Sensor-70-INFO-TempChange: 20.8 Druck: 1037.2083415
+161217-075418-KY053_Sensor-89-INFO-Temp: 20.8 DruckChange: 1038.1364602
+161217-091447-jrWetterstation-34-INFO-
+
+Wetterstation gestartet
+
+161217-091447-KY053_Sensor-90-INFO-Temp: 21.1 DruckChange: 1038.43
+161217-091513-jrWetterstation-57-ERROR-Global: Program stopped by external interrupt
+161217-091908-jrWetterstation-34-INFO-
+
+Wetterstation gestartet
+
+161217-091908-KY053_Sensor-90-INFO-Temp: 21.2 DruckChange: 1038.43
+161217-112547-KY053_Sensor-71-INFO-TempChange: 21.8 Druck: 1038.28
+161217-113443-KY053_Sensor-71-INFO-TempChange: 22.4 Druck: 1038.23
+161217-114630-KY053_Sensor-71-INFO-TempChange: 23.0 Druck: 1038.3
+161217-124855-KY053_Sensor-71-INFO-TempChange: 22.4 Druck: 1037.85
+161217-130233-KY053_Sensor-71-INFO-TempChange: 21.8 Druck: 1037.8
+161217-133022-KY053_Sensor-90-INFO-Temp: 22.1 DruckChange: 1037.4
+161217-133535-KY053_Sensor-71-INFO-TempChange: 22.4 Druck: 1037.47
+161217-140841-KY053_Sensor-71-INFO-TempChange: 23.0 Druck: 1037.56
+161217-150951-KY053_Sensor-71-INFO-TempChange: 22.4 Druck: 1037.58
+161217-152323-KY053_Sensor-71-INFO-TempChange: 21.8 Druck: 1037.63
+161217-160700-KY053_Sensor-71-INFO-TempChange: 21.2 Druck: 1037.61
+161217-180627-KY053_Sensor-71-INFO-TempChange: 21.8 Druck: 1037.53
+161217-181125-KY053_Sensor-71-INFO-TempChange: 22.4 Druck: 1037.4
+161217-181855-KY053_Sensor-71-INFO-TempChange: 23.0 Druck: 1037.54
+161217-200406-jrWetterstation-34-INFO-
+
+Wetterstation gestartet
+
+161217-200406-KY053_Sensor-90-INFO-Temp: 23.3 DruckChange: 1037.6
+161217-200437-KY053_Sensor-71-INFO-TempChange: 25.2 Druck: 1037.69
+161217-200444-KY053_Sensor-71-INFO-TempChange: 24.6 Druck: 1037.74
+161217-200501-KY053_Sensor-71-INFO-TempChange: 23.9 Druck: 1037.68
+161217-200542-KY053_Sensor-71-INFO-TempChange: 23.3 Druck: 1037.66
+161217-205139-jrWetterstation-50-ERROR-Traceback (most recent call last):
+  File "/home/robert/jrWetterstation/jrWetterstation.py", line 42, in <module>
+    ky053.save()
+  File "/home/robert/jrWetterstation/KY053_Sensor.py", line 60, in save
+    rrdtool.update('jrWetter.rrd','N:%s:%s' %(self.actTemp,self.actPress))
+error: opening 'jrWetter.rrd': No such file or directory
+
