@@ -42,11 +42,15 @@ try:
         time.sleep(sleepTime)
 
 except Exception:
-    myLogger.error('Global: unhandled exception. Continue program')
+    errMsg="Global exception handler: \n"
+    errMsg+=traceback.format_exc()
+    myLogger.error(errMsg)
+    myMail=Mail()
+    myMail.sendMail(errMsg)
     pass
 
 except:
-    message='Global: Program stopped by external interrupt'
+    message='Global exception handler:\nProgram stopped by external interrupt'
     myLogger.error(message)
     print message
     GPIO.cleanup()
