@@ -8,7 +8,7 @@ from datetime import datetime
 from Mail import Mail
 import rrdtool
 
-class KY053_Sensor:    
+class KY052_Sensor:    
 #=======================================================================================================================
     def __init__(self):
         self.hoehe=166 #Hoehe Seyring

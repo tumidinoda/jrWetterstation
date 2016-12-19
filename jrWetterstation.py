@@ -1,5 +1,5 @@
 from Temperatur import Temperatur
-from KY053_Sensor import KY053_Sensor as KY053
+from KY052_Sensor import KY053_Sensor as KY052
 import time
 import RPi.GPIO as GPIO
 
@@ -26,7 +26,7 @@ myLogger.addHandler(handler)
 #define global variables
 sleepTime = 5
 #temp = Temperatur()
-ky053 = KY053()   #KY053 Sensor instance created
+ky052 = KY052()   #KY052 Sensor instance created
 #===============================================================================
 try:
     myLogger.info('\n\nWetterstation gestartet\n')
@@ -35,9 +35,9 @@ try:
         #temp.out()
         #temp.save()
         
-        ky053.read()
-#       ky053.out()
-        ky053.save()
+        ky052.read()
+#       ky052.out()
+        ky052.save()
         
         time.sleep(sleepTime)
 
