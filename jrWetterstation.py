@@ -1,5 +1,5 @@
 from Temperatur import Temperatur
-from KY052_Sensor import KY053_Sensor as KY052
+from KY052_Sensor import KY052_Sensor as KY052
 import time
 import RPi.GPIO as GPIO
 
