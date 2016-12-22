@@ -1,0 +1,41 @@
+# create RRD DB Werte: temp0, press0 15 Minuten Raster
+rrdtool create jrWetter.rrd --step 900 DS:temp0:GAUGE:1200:-30:700 DS:press0:GAUGE:1200:800:1200 \
+RRA:AVERAGE:0.5:1:960 RRA:MIN:0.5:96:3600 RRA:MAX:0.5:96:3600 RRA:AVERAGE:0.5:96:3600
+
+
+sudo ./rrdtool graph jrWetter_24h.png --left-axis-format "%2.1lf" -w 900 -h 500 -E -A \
+-t "Zimmertemperatur last 24h" --end now --start end-1d \
+DEF:temp0=jrWetter.rrd:temp0:AVERAGE \
+VDEF:temp0_last=temp0,LAST \
+"LINE:temp0#0000ff:Zimmertemperatur\: " \
+"GPRINT:temp0_last:%2.1lf\n"
+
+
+
+
+#Erklärung RRD Datenquellen
+DS:〈Name〉:〈Typ〉:〈Heartbeat〉:〈Min〉:〈Max 〉
+Bsp.: DS:temp hdd:GAUGE:120:10:U
+	temp hdd Beliebiger Bezeichner
+	GAUGE Der Messwert wird so wie eingegeben gespeichert.
+	120 Liegen zwei Messungen weiter als 120 s auseinander,left-axis-formrt
+	wird das Intervall als ungultige betrachtet. ¨
+	10 Temperaturen unter 10 ◦C sind ungultig. ¨
+	U Keine Obergrenze fur die Temp. festgelegt. ¨
+Typen
+	GAUGE Zeitlose Messgr¨oße (der Messwert wird nicht differenziert).
+	DERIVE Die Anderungsrate bzgl. der letzten Messung wird gespeichert. ¨
+	COUNTER Wie DERIVE nur mit Berucksichtung von 32-Bit bzw. 64-Bit-Uberlaeufen.
+	ABSOULTE Messwert wird durch die seit der letzten Messung vergangene Zeit dividiert.
+	COMPUTE Berechnung auf Basis anderen Datenquellen (siehe Manpage).
+
+#Erklärung Archivierungsregeln
+Ein RRA fasst (mehrere) primaere Datenpunkte (PDPs) zusammen.
+Diese konsolidierte Datenpunkte (CDPs) werden gespeichert.
+RRA:〈Funktion〉:〈Quote〉:〈PDPs〉:〈CDPs〉
+	〈CDPs〉 Anzahl gespeicherter CDPs in diesem Archiv
+	〈PDPs〉 Anzahl PDPs, die zu einem CDP zusammenfasst werden
+	〈Quote〉 Anteil der PDPs, die hoechstens ungultig sein koennen, damit der CDP noch gueltig ist. ¨
+	〈Funktion〉 Art auf die sich der CDP aus den PDPs berechnet.
+		AVERAGE, MIN, MAX oder LAST
+I Bsp.: RRA:AVERAGE:0.5:1:300
