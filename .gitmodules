@@ -4,3 +4,6 @@
 [submodule "Adafruit_Python_DHT"]
 	path = Adafruit_Python_DHT
 	url = https://github.com/adafruit/Adafruit_Python_DHT.git
+[submodule "rrdtool-1.x"]
+	path = rrdtool-1.x
+	url = https://github.com/oetiker/rrdtool-1.x.git
