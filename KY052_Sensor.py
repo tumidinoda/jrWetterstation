@@ -5,8 +5,8 @@ from datetime import datetime
 from jrMail import *
 import rrdtool
 
-class KY052_Sensor:    
 #=======================================================================================================================
+class KY052_Sensor:    
     def __init__(self):
         self.hoehe=166 #Hoehe Seyring
         self.lastTemp = -99.0
@@ -17,6 +17,7 @@ class KY052_Sensor:
         self.actPress = 0.0
         self.minPress=2000
         self.maxPress=0.0
+        self.rrdFile="db/jrWetter.rrd"
 
         self.myLogger=logging.getLogger('jrWetterstationLogger')
         self.myLogger.debug('KY053 constructor started')
@@ -54,7 +55,7 @@ class KY052_Sensor:
 #=======================================================================================================================
     def save(self):
 	#write values to round robin DB
-	rrdtool.update('jrWetter.rrd','N:%s:%s' %(self.actTemp,self.actPress))
+	rrdtool.update(self.rrdFile,'N:%s:%s' %(self.actTemp,self.actPress))
 	#print cmd
         #rrdtool.update(cmd)	
 
