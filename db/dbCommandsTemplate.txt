@@ -2,15 +2,32 @@
 rrdtool create jrWetter.rrd --step 900 DS:temp0:GAUGE:1200:-30:700 DS:press0:GAUGE:1200:800:1200 \
 RRA:AVERAGE:0.5:1:960 RRA:MIN:0.5:96:3600 RRA:MAX:0.5:96:3600 RRA:AVERAGE:0.5:96:3600
 
+#24h Auswertung
+rrdtool graph jrWetter_24h.png --left-axis-format "%4.1lf" -w 900 -h 500 -E -A \
+--right-axis 1:1014 --right-axis-format "%4.1lf" \
+-t "Zimmertemperatur/Luftdruck last 24h" --end now --start end-1d \
+DEF:temp=jrWetter.rrd:temp0:AVERAGE \
+"LINE2:temp#0000ff:Zimmertemperatur\:" "GPRINT:temp:LAST:%2.1lf\n" \
+DEF:press=jrWetter.rrd:press0:AVERAGE CDEF:druck=press,1014,- \
+"LINE2:druck#ff0000:Luftdruck\:" "GPRINT:press:LAST:%2.1lf\n"
 
-sudo ./rrdtool graph jrWetter_24h.png --left-axis-format "%2.1lf" -w 900 -h 500 -E -A \
--t "Zimmertemperatur last 24h" --end now --start end-1d \
-DEF:temp0=jrWetter.rrd:temp0:AVERAGE \
-VDEF:temp0_last=temp0,LAST \
-"LINE:temp0#0000ff:Zimmertemperatur\: " \
-"GPRINT:temp0_last:%2.1lf\n"
+#7 Tage Auswertung
+rrdtool graph jrWetter_7d.png --left-axis-format "%4.1lf" -w 900 -h 500 -E -A \
+--right-axis 1:1014 --right-axis-format "%4.1lf" \
+-t "Zimmertemperatur/Luftdruck last 7d" --end now --start end-7d \
+DEF:temp=jrWetter.rrd:temp0:AVERAGE \
+"LINE2:temp#0000ff:Zimmertemperatur\:" "GPRINT:temp:LAST:%2.1lf\n" \
+DEF:press=jrWetter.rrd:press0:AVERAGE CDEF:druck=press,1014,- \
+"LINE2:druck#ff0000:Luftdruck\:" "GPRINT:press:LAST:%2.1lf\n"
 
-
+#30 Tage Auswertung
+rrdtool graph jrWetter_30d.png --left-axis-format "%4.1lf" -w 900 -h 500 -E -A \
+--right-axis 1:1014 --right-axis-format "%4.1lf" \
+-t "Zimmertemperatur/Luftdruck last 30d" --end now --start end-30d \
+DEF:temp=jrWetter.rrd:temp0:AVERAGE \
+"LINE2:temp#0000ff:Zimmertemperatur\:" "GPRINT:temp:LAST:%2.1lf\n" \
+DEF:press=jrWetter.rrd:press0:AVERAGE CDEF:druck=press,1014,- \
+"LINE2:druck#ff0000:Luftdruck\:" "GPRINT:press:LAST:%2.1lf\n"
 
 
 #Erklärung RRD Datenquellen
