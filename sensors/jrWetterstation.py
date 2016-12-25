@@ -8,7 +8,7 @@ import glob
 import logging
 import logging.handlers
 
-LOG_FILENAME = 'jrWetterstation-Log.log'
+LOG_FILENAME = '../logs/jrWetterstation.log'
 
 # Set up a specific logger with our desired output level
 myLogger = logging.getLogger('jrWetterstationLogger.log')
@@ -29,16 +29,16 @@ ky052 = KY052()   #KY052 Sensor instance created
 #===============================================================================
 try:
     myLogger.info('\n\nWetterstation gestartet\n')
-    while True:
+#   while True:
         #temp.read()
         #temp.out()
         #temp.save()
         
-        ky052.read()
+    ky052.read()
 #       ky052.out()
-        ky052.save()
+    ky052.save()
         
-        time.sleep(sleepTime)
+#       time.sleep(sleepTime)
 
 except Exception:
     errMsg="Global exception handler: \n"

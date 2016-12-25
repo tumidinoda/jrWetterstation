@@ -17,7 +17,7 @@ class KY052_Sensor:
         self.actPress = 0.0
         self.minPress=2000
         self.maxPress=0.0
-        self.rrdFile="db/jrWetter.rrd"
+        self.rrdFile="../db/jrWetter.rrd"
 
         self.myLogger=logging.getLogger('jrWetterstationLogger')
         self.myLogger.debug('KY053 constructor started')
