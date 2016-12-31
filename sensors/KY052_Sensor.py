@@ -80,7 +80,7 @@ class KY052_Sensor:
         if (self.actPress<self.lastPress-deltaPress) or (self.actPress>self.lastPress+deltaPress):
             self.myLogger.info('Temp: '+str(self.actTemp)+' DruckChange: '+str(self.actPress))
             self.lastPress=self.actPress
-            myMail=jrMail()
-            myMail.sendPressMail(self.actPress,self.minPress,self.maxPress)
+            #myMail=jrMail()
+            #myMail.sendPressMail(self.actPress,self.minPress,self.maxPress)
 
 

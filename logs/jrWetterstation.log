@@ -30,3 +30,47 @@ Traceback (most recent call last):
     .byte	0x93
 error: opening '../db/jrWetter.rrd': No such file or directory
 
+161231-160502-jrWetterstation-31-INFO-
+
+Wetterstation gestartet
+
+161231-160502-jrWetterstation-46-ERROR-Global exception handler: 
+Traceback (most recent call last):
+  File "/home/robert/jrWetterstation/sensors/jrWetterstation.py", line 39, in <module>
+    ky052.save()
+  File "/home/robert/jrWetterstation/sensors/KY052_Sensor.py", line 58, in save
+    .byte	0x93
+error: opening '../db/jrWetter.rrd': No such file or directory
+
+161231-161002-jrWetterstation-31-INFO-
+
+Wetterstation gestartet
+
+161231-161002-jrWetterstation-46-ERROR-Global exception handler: 
+Traceback (most recent call last):
+  File "/home/robert/jrWetterstation/sensors/jrWetterstation.py", line 39, in <module>
+    ky052.save()
+  File "/home/robert/jrWetterstation/sensors/KY052_Sensor.py", line 58, in save
+    .byte	0x93
+error: opening '../db/jrWetter.rrd': No such file or directory
+
+161231-161503-jrWetterstation-31-INFO-
+
+Wetterstation gestartet
+
+161231-161503-jrWetterstation-46-ERROR-Global exception handler: 
+Traceback (most recent call last):
+  File "/home/robert/jrWetterstation/sensors/jrWetterstation.py", line 39, in <module>
+    ky052.save()
+  File "/home/robert/jrWetterstation/sensors/KY052_Sensor.py", line 58, in save
+    .byte	0x93
+error: opening '../db/jrWetter.rrd': No such file or directory
+
+161231-161802-jrWetterstation-31-INFO-
+
+Wetterstation gestartet
+
+161231-162003-jrWetterstation-31-INFO-
+
+Wetterstation gestartet
+
