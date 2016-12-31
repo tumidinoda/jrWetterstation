@@ -8,7 +8,7 @@ import glob
 import logging
 import logging.handlers
 
-LOG_FILENAME = '../logs/jrWetterstation.log'
+LOG_FILENAME = '/home/robert/jrWetterstation/logs/jrWetterstation.log'
 
 # Set up a specific logger with our desired output level
 myLogger = logging.getLogger('jrWetterstationLogger.log')
