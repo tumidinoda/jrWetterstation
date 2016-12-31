@@ -2,3 +2,4 @@
 Wetterstation.db
 jrWetter.rrd
 *.png
+logs/

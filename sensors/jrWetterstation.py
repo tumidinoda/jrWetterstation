@@ -28,7 +28,7 @@ sleepTime = 5
 ky052 = KY052()   #KY052 Sensor instance created
 #===============================================================================
 try:
-    myLogger.info('\n\nWetterstation gestartet\n')
+    myLogger.info('Wetterstation gestartet')
 #   while True:
         #temp.read()
         #temp.out()
