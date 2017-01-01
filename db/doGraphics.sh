@@ -34,5 +34,6 @@ cd wetterstation.jr1.at
 lcd $dbpath
 prompt
 mput *.png
+put *.rrd
 quit
 EOF
