@@ -32,10 +32,10 @@ class KY052_Sensor:
                 self.myLogger.debug('KY-053 sensor successful created')
                 break
             except IOError:
-                self.myLogger.debug('KY-053 sensor not detected. Check wiring. Try again in: '+str(sleeptime)+' seconds')
+                self.myLogger.debug('KY-053 sensor not detected. Check wiring. Try again in: '+str(retrytime)+' seconds')
                 print ("KY-053 Sensor nicht erkannt!")
                 print ("Ueberpruefen Sie die Verbindungen")
-                print ("Naechste Versuch in: "+str(sleeptime)+" Sekunden")
+                print ("Naechste Versuch in: "+str(retrytime)+" Sekunden")
                 time.sleep(retrytime)
                 retrytime*=3
 
