@@ -54,10 +54,9 @@ class KY052_Sensor:
         print "Druck:", self.actPress, "hPa"
 #=======================================================================================================================
     def save(self):
+        self.myLogger.info('Temp: '+str(self.actTemp)+' Press: '+str(self.actPress))
 	#write values to round robin DB
-	rrdtool.update(self.rrdFile,'N:%s:%s' %(self.actTemp,self.actPress))
-	#print cmd
-        #rrdtool.update(cmd)	
+	rrdtool.update(self.rrdFile,'N:%s:%s' %(self.actTemp,self.actPress))	
 
         # save only if diff greater than delta
         deltaTemp=0.5
@@ -78,7 +77,7 @@ class KY052_Sensor:
         if (self.actPress<self.minPress): self.minPress=self.actPress
         if (self.actPress>self.maxPress): self.maxPress=self.actPress
         if (self.actPress<self.lastPress-deltaPress) or (self.actPress>self.lastPress+deltaPress):
-            self.myLogger.info('Temp: '+str(self.actTemp)+' DruckChange: '+str(self.actPress))
+#            self.myLogger.info('Temp: '+str(self.actTemp)+' DruckChange: '+str(self.actPress))
             self.lastPress=self.actPress
             #myMail=jrMail()
             #myMail.sendPressMail(self.actPress,self.minPress,self.maxPress)
