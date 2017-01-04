@@ -17,7 +17,7 @@ class KY052_Sensor:
         self.actPress = 0.0
         self.minPress=2000
         self.maxPress=0.0
-        self.rrdFile="db/jrWetter.rrd"
+        self.rrdFile="/home/robert/jrWetterstation/db/jrWetter.rrd"
 
         self.myLogger=logging.getLogger('jrWetterstationLogger')
         self.myLogger.debug('KY053 constructor started')
@@ -32,10 +32,10 @@ class KY052_Sensor:
                 self.myLogger.debug('KY-053 sensor successful created')
                 break
             except IOError:
-                self.myLogger.debug('KY-053 sensor not detected. Check wiring. Try again in: '+str(sleeptime)+' seconds')
+                self.myLogger.debug('KY-053 sensor not detected. Check wiring. Try again in: '+str(retrytime)+' seconds')
                 print ("KY-053 Sensor nicht erkannt!")
                 print ("Ueberpruefen Sie die Verbindungen")
-                print ("Naechste Versuch in: "+str(sleeptime)+" Sekunden")
+                print ("Naechste Versuch in: "+str(retrytime)+" Sekunden")
                 time.sleep(retrytime)
                 retrytime*=3
 
@@ -54,10 +54,9 @@ class KY052_Sensor:
         print "Druck:", self.actPress, "hPa"
 #=======================================================================================================================
     def save(self):
+        self.myLogger.info('Temp: '+str(self.actTemp)+' Press: '+str(self.actPress))
 	#write values to round robin DB
-	rrdtool.update(self.rrdFile,'N:%s:%s' %(self.actTemp,self.actPress))
-	#print cmd
-        #rrdtool.update(cmd)	
+	rrdtool.update(self.rrdFile,'N:%s:%s' %(self.actTemp,self.actPress))	
 
         # save only if diff greater than delta
         deltaTemp=0.5
@@ -78,9 +77,9 @@ class KY052_Sensor:
         if (self.actPress<self.minPress): self.minPress=self.actPress
         if (self.actPress>self.maxPress): self.maxPress=self.actPress
         if (self.actPress<self.lastPress-deltaPress) or (self.actPress>self.lastPress+deltaPress):
-            self.myLogger.info('Temp: '+str(self.actTemp)+' DruckChange: '+str(self.actPress))
+#            self.myLogger.info('Temp: '+str(self.actTemp)+' DruckChange: '+str(self.actPress))
             self.lastPress=self.actPress
-            myMail=jrMail()
-            myMail.sendPressMail(self.actPress,self.minPress,self.maxPress)
+            #myMail=jrMail()
+            #myMail.sendPressMail(self.actPress,self.minPress,self.maxPress)
 
 
