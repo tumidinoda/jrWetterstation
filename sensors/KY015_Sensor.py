@@ -1,8 +1,7 @@
-import sys
-import logging
-from datetime import datetime
-from Mail import Mail
+from logging import getLogger
+from time import sleep
 import rrdtool
+from jrMail import JrMail
 
 
 class KY015_Sensor:
@@ -18,7 +17,7 @@ class KY015_Sensor:
         self.minPress = 2000
         self.maxPress = 0.0
 
-        self.myLogger = logging.getLogger('jrWetterstationLogger')
+        self.myLogger = getLogger('jrWetterstationLogger')
         self.myLogger.debug('KY053 constructor started')
 
         retrytime = 1  # sec
@@ -27,16 +26,15 @@ class KY015_Sensor:
                 # Sensor wird initialisiert
                 self.myLogger.debug('BMP085 initialisieren')
                 self.BMPSensor = BMP085.BMP085()
-                success = True
                 self.myLogger.debug('KY-053 sensor successful created')
                 break
             except IOError:
                 self.myLogger.debug(
-                    'KY-053 sensor not detected. Check wiring. Try again in: ' + str(sleeptime) + ' seconds')
-                print ("KY-053 Sensor nicht erkannt!")
-                print ("Ueberpruefen Sie die Verbindungen")
-                print ("Naechste Versuch in: " + str(sleeptime) + " Sekunden")
-                time.sleep(retrytime)
+                    'KY-053 sensor not detected. Check wiring. Try again in: ' + str(retrytime) + ' seconds')
+                print("KY-053 Sensor nicht erkannt!")
+                print("Ueberpruefen Sie die Verbindungen")
+                print("Naechste Versuch in: " + str(retrytime) + " Sekunden")
+                sleep(retrytime)
                 retrytime *= 3
 
         self.myLogger.debug('KY053 constructor ended')
@@ -51,9 +49,9 @@ class KY015_Sensor:
 
     # =======================================================================================================================
     def out(self):
-        print '---------------------------------------'
-        print "Temperatur:", self.actTemp, "°C"
-        print "Druck:", self.actPress, "hPa"
+        print('---------------------------------------')
+        print("Temperatur:", self.actTemp, "°C")
+        print("Druck:", self.actPress, "hPa")
 
     # =======================================================================================================================
     def save(self):
@@ -70,15 +68,8 @@ class KY015_Sensor:
             # eliminate jitter (diff > 10 degrees)
             if abs(self.actTemp - self.lastTemp) < 10:
                 self.myLogger.info('TempChange: ' + str(self.actTemp) + ' Druck: ' + str(self.actPress))
-                # write to db
-                con = sql.connect('Wetterstation.db')
-                with con:
-                    cur = con.cursor()
-                    cur.execute("INSERT INTO tempLogs(temperatur) VALUES(?)", (self.actTemp,))
-                con.commit()
-                con.close()
                 # send Mail to Robert
-                myMail = Mail()
+                myMail = JrMail()
                 myMail.sendTempMail(self.actTemp, self.minTemp, self.maxTemp)
             else:
                 self.myLogger.debug(
@@ -91,5 +82,5 @@ class KY015_Sensor:
         if (self.actPress < self.lastPress - deltaPress) or (self.actPress > self.lastPress + deltaPress):
             self.myLogger.info('Temp: ' + str(self.actTemp) + ' DruckChange: ' + str(self.actPress))
             self.lastPress = self.actPress
-            myMail = Mail()
+            myMail = JrMail()
             myMail.sendPressMail(self.actPress, self.minPress, self.maxPress)

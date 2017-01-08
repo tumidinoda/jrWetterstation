@@ -1,13 +1,8 @@
 from KY052_Sensor import KY052_Sensor
-import time
-import sys
-import traceback
-from jrMail import *
+from jrMail import JrMail
 
 # ===============================================================================
 # define cyclic logging
-import glob
-import logging
 import logging.handlers
 import traceback
 
@@ -34,7 +29,7 @@ except Exception:
     errMsg = "Global exception handler: \n"
     errMsg += traceback.format_exc()
     myLogger.error(errMsg)
-    myMail = jrMail()
+    myMail = JrMail()
     myMail.sendMail('Wetterstation: Global Exception', errMsg)
     pass
 

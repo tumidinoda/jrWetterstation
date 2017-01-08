@@ -1,7 +1,7 @@
 import logging
 import rrdtool
 from jrMail import JrMail
-import jrPressure
+from jrPressure import JrPressure
 
 # setup logging
 LOG_FILE = '/home/robert/jrWetterstation/logs/jrWetterstation.log'
@@ -36,7 +36,7 @@ logMsg = ('Diff: ' + str(diffPress) +
           str(diffPress / OBSERVATION_TIME))
 logging.info(logMsg)
 
-pressure = jrPressure.JrPressure()
+pressure = JrPressure()
 myMail = JrMail()
 mailMsg = "DruckVorher: " + str(firstPressValue) + " DruckJetzt: " + str(lastPressValue) + "\n"
 if abs(diffPress) >= PRESS_DELTA_NORMAL:
@@ -45,3 +45,4 @@ if abs(diffPress) >= PRESS_DELTA_NORMAL:
     else:
         mailMsg += "Leichte Druckänderung"
     myMail.sendMail('Druckaenderung', mailMsg)
+    pressure.mod_status(diffPress)
