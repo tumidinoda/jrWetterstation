@@ -1,6 +1,5 @@
 import logging
 import rrdtool
-from jrMail import JrMail
 from jrPressure import JrPressure
 
 # setup logging
@@ -34,7 +33,8 @@ press.set(lastPressValue)
 diffPress = lastPressValue - firstPressValue
 press.mod_status(diffPress)
 
-logMsg = ('Diff: ' + str(diffPress) +
+logMsg = ('Press: ' + str(lastPressValue) +
+          ' Diff: ' + str(diffPress) +
           " Average change per hour for last " +
           str(OBSERVATION_TIME) + " hours: " +
           str(diffPress / OBSERVATION_TIME))
