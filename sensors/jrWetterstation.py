@@ -7,7 +7,8 @@ from jrMail import *
 # ===============================================================================
 # define cyclic logging
 import glob
-import loggingimport logging.handlers
+import logging
+import logging.handlers
 import traceback
 
 LOG_FILENAME = '/home/robert/jrWetterstation/logs/jrWetterstation.log'
