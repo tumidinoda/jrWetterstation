@@ -30,7 +30,7 @@ print("Diff: " + str(diffPress) +
       str(diffPress / OBSERVATION_TIME))
 
 myMail = JrMail()
-mailStr = "DruckVorher: " + firstPressValue + " DruckJetzt: " + lastPressValue + "\n"
+mailStr = "DruckVorher: " + str(firstPressValue) + " DruckJetzt: " + str(lastPressValue) + "\n"
 if abs(diffPress) >= PRESS_DELTA_NORMAL:
     if abs(diffPress)>=PRESS_DELTA_STRONG:
         mailStr += "Starke Druckänderung"
