@@ -58,7 +58,7 @@ class JrPressure:
         mailMsg = ("Neuer Druckstatus: " +
                    str(self.__status) +
                    " " + str(self.__value))
-        myMail.sendMail("Wetterstation Druckänderung", mailMsg)
+        myMail.sendMail("Wetterstation Druckaenderung", mailMsg)
 
     # =================================================================================================================
     def save(self):
