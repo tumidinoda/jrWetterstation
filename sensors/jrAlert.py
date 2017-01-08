@@ -3,7 +3,9 @@ import rrdtool
 from jrMail import JrMail
 
 # setup logging
-logging.basicConfig(format='%(asctime)s-%(module)s-%(lineno)s-%(levelname)s-%(message)s',
+LOG_FILE='/home/robert/jrWetterstation/logs/jrWetterstation.log'
+logging.basicConfig(filename=LOG_FILE,
+                    format='%(asctime)s-%(module)s-%(lineno)s-%(levelname)s-%(message)s',
                     datefmt='%y%m%d-%H%M%S',
                     level=logging.INFO)
 logging.info("jrAlert started")
