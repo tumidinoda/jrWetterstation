@@ -29,20 +29,13 @@ for value in valueList:
         lastPressValue = value[1]
 
 assert firstPressValue is not None
+press = JrPressure()
+press.set(lastPressValue)
 diffPress = lastPressValue - firstPressValue
+press.mod_status(diffPress)
+
 logMsg = ('Diff: ' + str(diffPress) +
           " Average change per hour for last " +
           str(OBSERVATION_TIME) + " hours: " +
           str(diffPress / OBSERVATION_TIME))
 logging.info(logMsg)
-
-pressure = JrPressure()
-myMail = JrMail()
-mailMsg = "DruckVorher: " + str(firstPressValue) + " DruckJetzt: " + str(lastPressValue) + "\n"
-if abs(diffPress) >= PRESS_DELTA_NORMAL:
-    if abs(diffPress) >= PRESS_DELTA_STRONG:
-        mailMsg += "Starke Druckänderung"
-    else:
-        mailMsg += "Leichte Druckänderung"
-    myMail.sendMail('Druckaenderung', mailMsg)
-    pressure.mod_status(diffPress)
