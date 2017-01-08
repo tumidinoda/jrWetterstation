@@ -14,7 +14,7 @@ handler.setFormatter(logging.Formatter('%(asctime)s-%(module)s-%(lineno)s-%(leve
 myLogger.addHandler(handler)
 
 # ===============================================================================
-ky052 = KY052()  # KY052 Sensor instance created
+ky052 = KY052_Sensor()  # KY052 Sensor instance created
 try:
     myLogger.debug('Wetterstation gestartet')
     ky052.read()
@@ -31,4 +31,4 @@ except Exception:
 except:
     message = 'Global exception handler:\nProgram stopped by external interrupt'
     myLogger.error(message)
-    print message
+    print(message)

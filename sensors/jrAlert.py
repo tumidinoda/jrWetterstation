@@ -34,7 +34,7 @@ logMsg = ('Diff: ' + str(diffPress) +
 logging.info(logMsg)
 
 myMail = JrMail()
-mailMsg = "DruckVorher: " + firstPressValue + " DruckJetzt: " + lastPressValue + "\n"
+mailMsg = "DruckVorher: " + str(firstPressValue) + " DruckJetzt: " + str(lastPressValue) + "\n"
 if abs(diffPress) >= PRESS_DELTA_NORMAL:
     if abs(diffPress) >= PRESS_DELTA_STRONG:
         mailMsg += "Starke Druckänderung"
