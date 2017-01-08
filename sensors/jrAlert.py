@@ -13,7 +13,7 @@ logging.info("jrAlert started")
 
 RDD_FILE = '/home/robert/jrWetterstation/db/jrWetter.rrd'
 OBSERVATION_TIME = 3  # time in hours
-PRESS_DELTA_NORMAL = 2  # value in hPA per OBSERVATION_TIME
+PRESS_DELTA_NORMAL = 2  # value in hPA per OBSERVATION_PERIOD
 PRESS_DELTA_STRONG = 4  # value for storm warning (same period as above)
 
 observationStr = '-' + str(OBSERVATION_TIME) + 'hr'
