@@ -1,14 +1,5 @@
-from KY052_Sensor import KY052_Sensor
-import time
-import sys
-import traceback
-from jrMail import *
-
-# ===============================================================================
-# define cyclic logging
-import glob
-import logging
 import logging.handlers
+import traceback
 
 LOG_FILENAME = '/home/robert/jrWetterstation/logs/jrWetterstation.log'
 
