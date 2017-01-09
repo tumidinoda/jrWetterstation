@@ -56,9 +56,7 @@ class JrMail:
         server.quit()
 
     # =======================================================================================================================
-    def sendMail(self, subject, msg):
-        inhalt = msg
-
+    def sendMail(self, subject, inhalt):
         text = 'From: ' + self.adress + '\n'
         text += 'To: ' + self.adress + '\n'
         text += 'Date: ' + time.ctime(time.time()) + '\n'
