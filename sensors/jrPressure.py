@@ -8,7 +8,7 @@ PRESS_SONNIG = 0
 PRESS_BEWOELKT = 1
 PRESS_REGNERISCH = 2
 PRESS_STURM = 3
-press_status = ('sonnig', 'bewölkt', 'regnerisch', 'stürmisch')
+press_status = ('sonnig', 'bewoelkt', 'regnerisch', 'stuermisch')
 
 PRESS_DELTA_NORMAL = 2  # value in hPA per OBSERVATION_PERIOD
 PRESS_DELTA_STRONG = 4  # value for storm warning (same period as above)
@@ -60,7 +60,7 @@ class JrPressure:
         mailMsg = ("Neuer Druckstatus: " +
                    press_status[self.__status] +
                    " " + str(self.__value))
-        myMail.sendMail("Wetterstation Druckänderung", mailMsg)
+        myMail.sendMail("Wetterstation Druckaenderung", mailMsg)
 
     # =================================================================================================================
     def save(self):
