@@ -1,7 +1,7 @@
 #crontab Regeln
 */2 * * * * sudo python /home/robert/jrWetterstation/sensors/jrWetterstation.py > /home/robert/jrWetterstation/logs/cronSensorUpdate.log 2>&1
 */5 * * * * /home/robert/jrWetterstation/db/doGraphics.sh > /home/robert/jrWetterstation/logs/cronUpload.log 2>&1
-0 */1 * * * python3 /home/robert/jrWetterstation/sensors/jrAlert.py > /home/robert/jrWetterstation/logs/cronAlert.log 2>&1
+0 */1 * * * python /home/robert/jrWetterstation/sensors/jrAlert.py > /home/robert/jrWetterstation/logs/cronAlert.log 2>&1
 
 # create RRD DB Werte: temp0, press0 15 Minuten Raster
 rrdtool create jrWetter.rrd --step 900 DS:temp0:GAUGE:1200:-30:700 DS:press0:GAUGE:1200:800:1200 \
