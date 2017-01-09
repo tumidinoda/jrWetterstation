@@ -57,9 +57,7 @@ class JrPressure:
     # noinspection PyPep8Naming
     def mail(self):
         myMail = JrMail()
-        mailMsg = ("Neuer Druckstatus: " +
-                   press_status[self.__status] +
-                   " " + str(self.__value))
+        mailMsg=(round(self.__value,2)," Es wird ",press_status[self.__status])
         myMail.sendMail("Wetterstation Druckaenderung", mailMsg)
 
     # =================================================================================================================
