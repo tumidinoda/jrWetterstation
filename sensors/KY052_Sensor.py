@@ -60,7 +60,7 @@ class KY052_Sensor:
         self.myLogger.info('Temp: ' + str(self.actTemp) + ' Press: ' + str(self.actPress))
 
         # write values to round robin DB
-        rrdtool.update(self.rrdFile, 'N:%s:%s' % (self.actTemp, self.actPress))  # save only if diff greater than delta
+        rrdtool.update(self.rrdFile, 'N:%s:%s' % (self.actTemp, self.actPress))
         deltaTemp = 0.5
         if (self.actTemp < self.minTemp): self.minTemp = self.actTemp
         if (self.actTemp > self.maxTemp): self.maxTemp = self.actTemp

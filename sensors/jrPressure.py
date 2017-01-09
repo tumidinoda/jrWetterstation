@@ -1,12 +1,14 @@
+# -*- coding: UTF-8 -*-
 import json
 from jrMail import JrMail
 
 PRESS_STATUS_FILE = "pressStatus.json"
 
-PRESS_SONNIG = 1
-PRESS_BEWOELKT = 2
-PRESS_REGNERISCH = 3
-PRESS_STURM = 4
+PRESS_SONNIG = 0
+PRESS_BEWOELKT = 1
+PRESS_REGNERISCH = 2
+PRESS_STURM = 3
+press_status = ('sonnig', 'bewölkt', 'regnerisch', 'stürmisch')
 
 PRESS_DELTA_NORMAL = 2  # value in hPA per OBSERVATION_PERIOD
 PRESS_DELTA_STRONG = 4  # value for storm warning (same period as above)
@@ -56,8 +58,9 @@ class JrPressure:
     def mail(self):
         myMail = JrMail()
         mailMsg = ("Neuer Druckstatus: " +
-                   str(self.__status) +
+                   press_status[self.__status] +
                    " " + str(self.__value))
+
         myMail.sendMail("Wetterstation Druckänderung", mailMsg)
 
     # =================================================================================================================

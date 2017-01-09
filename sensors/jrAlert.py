@@ -17,7 +17,7 @@ PRESS_DELTA_STRONG = 4  # value for storm warning (same period as above)
 
 observationStr = '-' + str(OBSERVATION_TIME) + 'hr'
 # rrdResult = rrdtool.fetch(RDD_FILE, 'AVERAGE', '-s -4hr')
-rrdResult = rrdtool.fetch(RDD_FILE, 'AVERAGE', '-s' + observationStr)
+rrdResult = rrdtool.fetch(RDD_FILE, "AVERAGE", "-s" + observationStr)
 valueList = rrdResult[2]
 firstPressValue = None
 lastPressValue = None

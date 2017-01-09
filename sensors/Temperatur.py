@@ -1,3 +1,4 @@
+# -*- coding: UTF-8 -*-
 import glob
 import time
 from time import sleep
