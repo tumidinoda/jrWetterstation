@@ -1,5 +1,4 @@
 *.pyc
-Wetterstation.db
-jrWetter.rrd
+*.rrd
 *.png
 logs/
