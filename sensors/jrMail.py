@@ -70,7 +70,7 @@ class JrMail:
 
         server = smtplib.SMTP_SSL(self.__smtpserver)
         server.login(self.__user, self.__pw)
-        server.sendmail(self.__mailTo, self.__mailTo, text)
+        server.sendmail(self.__user, self.__mailTo, text)
         server.quit()
 
 # =======================================================================================================================
