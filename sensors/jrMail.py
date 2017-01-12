@@ -9,15 +9,12 @@ from datetime import datetime
 class JrMail:
     # =======================================================================================================================
     def __init__(self):
-        self.__mailTo = 'robert.jonas@gmx.at'
-        self.__smtpserver = 'mail.gmx.net'
-        self.__user = 'robert.jonas@gmx.at'
-        self.__pw = 'Seyring4'
         self.myLogger = logging.getLogger('jrWetterstationLogger')
         self.myLogger.debug('Mail constructor')
 
+        self.__smtpserver = 'mail.gmx.net'
         secrets = netrc.netrc()
-        self.__mailTo, dmy, self.__pw = secrets.authenticators(self.__smtpserver)
+        self.__user, self.__mailTo, self.__pw = secrets.authenticators(self.__smtpserver)
         print(self.__user)
 
     # =======================================================================================================================
