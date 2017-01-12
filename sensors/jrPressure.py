@@ -29,11 +29,7 @@ class JrPressure:
 
     # =================================================================================================================
     def mod_status(self, diff):
-        if diff <= -PRESS_DELTA_STRONG:
-            self.__status = PRESS_STURM
-            self.save()
-            self.mail()
-            return
+        press_status_old = self.__status
 
         if diff >= PRESS_DELTA_NORMAL:
             if self.__status == PRESS_STURM:
@@ -42,22 +38,25 @@ class JrPressure:
                 self.__status = PRESS_BEWOELKT
             elif self.__status == PRESS_BEWOELKT:
                 self.__status = PRESS_SONNIG
-            self.mail()
 
         if diff <= -PRESS_DELTA_NORMAL:
             if self.__status == PRESS_SONNIG:
                 self.__status = PRESS_BEWOELKT
             elif self.__status == PRESS_BEWOELKT:
                 self.__status = PRESS_REGNERISCH
-            self.mail()
+
+        if diff <= -PRESS_DELTA_STRONG:
+            self.__status = PRESS_STURM
 
         self.save()
+        if press_status_old is not self.__status:
+            self.__mail()
 
     # =================================================================================================================
     # noinspection PyPep8Naming
-    def mail(self):
+    def __mail(self):
         myMail = JrMail()
-        mailMsg=str(round(self.__value,2))+" Es wird "+press_status[self.__status]
+        mailMsg = str(round(self.__value, 2)) + " Es wird " + press_status[self.__status]
         myMail.sendMail("Wetterstation Druckaenderung", mailMsg)
 
     # =================================================================================================================
