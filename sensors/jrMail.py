@@ -1,6 +1,7 @@
 import time
 import smtplib
 import logging
+import netrc
 from datetime import datetime
 
 
@@ -14,6 +15,11 @@ class JrMail:
         self.pw = 'Seyring4'
         self.myLogger = logging.getLogger('jrWetterstationLogger')
         self.myLogger.debug('Mail constructor')
+
+        HOST='mail.gmx.net'
+        secrets=netrc.netrc()
+        user,account, pwd=secrets.authenticators(HOST)
+        print (user,account,pwd)
 
     # =======================================================================================================================
     def sendTempMail(self, actTemp, minTemp, maxTemp):
