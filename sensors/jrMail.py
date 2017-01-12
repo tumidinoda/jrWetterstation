@@ -16,7 +16,6 @@ class JrMail:
         self.__mailTo = 'robert.jonas@gmx.at'
         secrets = netrc.netrc()
         self.__user, mail_account, self.__pw = secrets.authenticators(self.__smtpserver)
-        print(self.__user)
 
     # =======================================================================================================================
     def sendTempMail(self, actTemp, minTemp, maxTemp):
