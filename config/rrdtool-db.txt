@@ -1,0 +1,8 @@
+# create RRD DB Werte: temp0, press0 5 Minuten Raster für 1 Woche, 1h Raster für 5 Jahre
+rrdtool create jrWetter.rrd --step 300 \
+DS:temp0:GAUGE:500:-30:70 \
+DS:press0:GAUGE:500:900:1100 \
+RRA:AVERAGE:0.2:1:2016 \
+RRA:MIN:0.2:288:1800 \
+RRA:MAX:0.2:288:1800 \
+RRA:AVERAGE:0.2:12:43200
