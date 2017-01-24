@@ -6,7 +6,7 @@ from jrMail import JrMail
 
 
 # =======================================================================================================================
-class KY052_Sensor:
+class SensorKY052:
     def __init__(self):
         self.hoehe = 166  # Hoehe Seyring
         self.lastTemp = -99.0
