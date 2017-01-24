@@ -1,6 +1,5 @@
 import logging
 import rrdtool
-
 from jrPressure import JrPressure
 
 # setup logging
@@ -13,6 +12,8 @@ logging.info("jrAlert started")
 
 RDD_FILE = '/home/robert/jrWetterstation/db/jrWetter.rrd'
 OBSERVATION_TIME = 3  # time in hours
+PRESS_DELTA_NORMAL = 2  # value in hPA per OBSERVATION_PERIOD
+PRESS_DELTA_STRONG = 4  # value for storm warning (same period as above)
 
 observationStr = '-' + str(OBSERVATION_TIME) + 'hr'
 # rrdResult = rrdtool.fetch(RDD_FILE, 'AVERAGE', '-s -4hr')
