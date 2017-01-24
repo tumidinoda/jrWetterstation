@@ -7,3 +7,6 @@
 [submodule "rrdtool-1.x"]
 	path = rrdtool-1.x
 	url = https://github.com/oetiker/rrdtool-1.x.git
+[submodule "jrPyCore"]
+	path = jrPyCore
+	url = https://github.com/tumidinoda/jrPyCore.git
