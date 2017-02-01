@@ -1,39 +1,26 @@
-from KY052_Sensor import KY052_Sensor
-from jrMail import JrMail
-
-# ===============================================================================
-# define cyclic logging
-import logging.handlers
 import traceback
 
-LOG_FILENAME = '/home/robert/jrWetterstation/logs/jrWetterstation.log'
+from jrPyCore.jrLogger import JrLogger
+from jrPyCore.jrMail import JrMail
+from sensors.sensor_KY052 import SensorKY052
 
-# Set up a specific logger with our desired output level
-myLogger = logging.getLogger('jrWetterstationLogger')
-# myLogger.setLevel(logging.DEBUG)
-myLogger.setLevel(logging.INFO)
-# Add the log message handler to the logger
-handler = logging.handlers.RotatingFileHandler(
-    LOG_FILENAME, maxBytes=100000, backupCount=5)
-handler.setFormatter(logging.Formatter('%(asctime)s-%(module)s-%(lineno)s-%(levelname)s-%(message)s', '%y%m%d-%H%M%S'))
-myLogger.addHandler(handler)
-
-# ===============================================================================
-ky052 = KY052_Sensor()  # KY052 Sensor instance created
+# -----------------------------------------------------------------------------------------------------
+logger = JrLogger().config(__name__)
 try:
-    myLogger.debug('Wetterstation gestartet')
+
+    logger.info('Wetterstation gestartet')
+    ky052 = SensorKY052()
     ky052.read()
     ky052.save()
 
 except Exception:
-    errMsg = "Global exception handler: \n"
-    errMsg += traceback.format_exc()
-    myLogger.error(errMsg)
+    err_msg = "Global exception handler: \n"
+    err_msg += traceback.format_exc()
+    logger.exception(err_msg)
     myMail = JrMail()
-    myMail.sendMail('Wetterstation: Global Exception', errMsg)
+    myMail.send('Wetterstation: Global Exception', err_msg)
     pass
 
 except:
-    message = 'Global exception handler:\nProgram stopped by external interrupt'
-    myLogger.error(message)
-    print(message)
+    err_msg = 'Global exception handler:\nProgram stopped by external interrupt'
+    logger.exception(err_msg)

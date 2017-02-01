@@ -2,3 +2,4 @@
 *.rrd
 *.png
 logs/
+.idea/

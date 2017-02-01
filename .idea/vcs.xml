@@ -2,5 +2,9 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Adafruit_Python_BMP" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Adafruit_Python_DHT" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/jrPyCore" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/rrdtool-1.x" vcs="Git" />
   </component>
 </project>
