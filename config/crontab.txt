@@ -1,4 +1,4 @@
 #crontab Regeln
 */2 * * * * sudo python /home/robert/jrWetterstation/sensors/jrWetterstation.py > /home/robert/jrWetterstation/logs/cronSensorUpdate.log 2>&1
 */5 * * * * /home/robert/jrWetterstation/db/doGraphics.sh > /home/robert/jrWetterstation/logs/cronUpload.log 2>&1
-*/11 * * * * python /home/robert/jrWetterstation/sensors/jrAlert.py > /home/robert/jrWetterstation/logs/cronAlert.log 2>&1
+0 */2 * * * python /home/robert/jrWetterstation/sensors/jrAlert.py > /home/robert/jrWetterstation/logs/cronAlert.log 2>&1
