@@ -2,25 +2,25 @@ import traceback
 
 from jrPyCore.jrLogger import JrLogger
 from jrPyCore.jrMail import JrMail
-from sensors.sensor_KY052 import SensorKY052
+from sensor_KY052 import SensorKY052
 
-# -----------------------------------------------------------------------------------------------------
-logger = JrLogger().setup(__name__)
-try:
 
-    logger.info('Wetterstation gestartet')
-    ky052 = SensorKY052()
-    ky052.read()
-    ky052.save()
+# ---------------------------------------------------------------------------------------------------------
+def main():
+    my_logger = JrLogger().setup(__file__)
+    try:
+        my_logger.info('Wetterstation gestartet')
+        ky052 = SensorKY052()
+        ky052.read()
+        ky052.save()
+    except:
+        err_msg = "Global exception handler: \n"
+        err_msg += traceback.format_exc()
+        my_logger.exception(err_msg)
+        my_mail = JrMail()
+        my_mail.send('Wetterstation: Global Exception', err_msg)
+        raise
 
-except Exception:
-    err_msg = "Global exception handler: \n"
-    err_msg += traceback.format_exc()
-    logger.exception(err_msg)
-    myMail = JrMail()
-    myMail.send('Wetterstation: Global Exception', err_msg)
-    pass
 
-except:
-    err_msg = 'Global exception handler:\nProgram stopped by external interrupt'
-    logger.exception(err_msg)
+# ---------------------------------------------------------------------------------------------------------
+__name__ == '__main__' and main()
