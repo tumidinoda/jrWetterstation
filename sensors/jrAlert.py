@@ -1,15 +1,11 @@
-import logging
 import rrdtool
-
 from jrPressure import JrPressure
 
+from jrPyCore.jrLogger import JrLogger
+
 # setup logging
-LOG_FILE = '/home/robert/jrWetterstation/logs/jrWetterstation.log'
-logging.basicConfig(filename=LOG_FILE,
-                    format='%(asctime)s-%(module)s-%(lineno)s-%(levelname)s-%(message)s',
-                    datefmt='%y%m%d-%H%M%S',
-                    level=logging.INFO)
-logging.info("jrAlert started")
+my_logger = JrLogger.setup(__name__)
+my_logger.info("jrAlert started")
 
 RDD_FILE = '/home/robert/jrWetterstation/db/jrWetter.rrd'
 OBSERVATION_TIME = 3  # time in hours
@@ -37,4 +33,4 @@ logMsg = ('Press: ' + str(lastPressValue) +
           " Average change per hour for last " +
           str(OBSERVATION_TIME) + " hours: " +
           str(diffPress / OBSERVATION_TIME))
-logging.info(logMsg)
+my_logger.info(logMsg)

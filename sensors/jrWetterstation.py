@@ -5,7 +5,7 @@ from jrPyCore.jrMail import JrMail
 from sensors.sensor_KY052 import SensorKY052
 
 # -----------------------------------------------------------------------------------------------------
-logger = JrLogger().config(__name__)
+logger = JrLogger().setup(__name__)
 try:
 
     logger.info('Wetterstation gestartet')
