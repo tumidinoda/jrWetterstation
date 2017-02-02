@@ -1,8 +1,9 @@
 # -*- coding: UTF-8 -*-
 import json
+
 from jrMail import JrMail
 
-PRESS_STATUS_FILE = "pressStatus.json"
+PRESS_STATUS_FILE = "/home/robert/jrWetterstation/sensors/pressStatus.json"
 
 PRESS_SONNIG = 0
 PRESS_BEWOELKT = 1
