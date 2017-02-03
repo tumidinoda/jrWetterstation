@@ -4,7 +4,7 @@ from jrPressure import JrPressure
 from jrPyCore.jrLogger import JrLogger
 
 # setup logging
-my_logger = JrLogger().setup(__name__)
+my_logger = JrLogger().get()
 my_logger.info("jrAlert started")
 
 RDD_FILE = '/home/robert/jrWetterstation/db/jrWetter.rrd'
