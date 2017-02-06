@@ -1,7 +1,8 @@
 # -*- coding: UTF-8 -*-
 import json
 
-from jrMail import JrMail
+from jrPyCore.jrLogger import JrLogger
+from jrPyCore.jrMail import JrMail
 
 PRESS_STATUS_FILE = "/home/robert/jrWetterstation/sensors/pressStatus.json"
 
@@ -20,6 +21,7 @@ class JrPressure:
     def __init__(self):
         self.__value = 1013
         self.__status = PRESS_BEWOELKT
+        self.__press_status_old = self.__status
         # get press status from PRESS_STATUS_FILE via json.load
         with open(PRESS_STATUS_FILE) as infile:
             self.__status = json.load(infile)
@@ -30,7 +32,7 @@ class JrPressure:
 
     # =================================================================================================================
     def mod_status(self, diff):
-        press_status_old = self.__status
+        self.__press_status_old = self.__status
 
         if diff >= PRESS_DELTA_NORMAL:
             if self.__status == PRESS_STURM:
@@ -50,15 +52,22 @@ class JrPressure:
             self.__status = PRESS_STURM
 
         self.save()
-        if press_status_old is not self.__status:
+        if self.__press_status_old is not self.__status:
             self.__mail()
 
     # =================================================================================================================
     # noinspection PyPep8Naming
     def __mail(self):
+        JrLogger().get().info("Press status changed from "
+                              + press_status[self.__press_status_old]
+                              + " to "
+                              + press_status[self.__status])
         myMail = JrMail()
-        mailMsg = str(round(self.__value, 2)) + " Es wird " + press_status[self.__status]
-        myMail.sendMail("Wetterstation Druckaenderung", mailMsg)
+        mailMsg = str(round(self.__value, 2)) \
+                  + " Es wird " + press_status[self.__status] \
+                  + " Vorher: " \
+                  + press_status[self.__press_status_old]
+        myMail.send("Wetterstation Druckänderung", mailMsg)
 
     # =================================================================================================================
     def save(self):

@@ -32,5 +32,5 @@ logMsg = ('Press: ' + str(lastPressValue) +
           ' Diff: ' + str(diffPress) +
           " Average change per hour for last " +
           str(OBSERVATION_TIME) + " hours: " +
-          str(diffPress / OBSERVATION_TIME))
+          str(round(diffPress / OBSERVATION_TIME,2)))
 my_logger.info(logMsg)
