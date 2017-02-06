@@ -29,7 +29,7 @@ diffPress = lastPressValue - firstPressValue
 press.mod_status(diffPress)
 
 logMsg = ('Press: ' + str(lastPressValue) +
-          ' Diff: ' + str(diffPress) +
+          ' Diff: ' + str(round(diffPress,1)) +
           " Average change per hour for last " +
           str(OBSERVATION_TIME) + " hours: " +
           str(round(diffPress / OBSERVATION_TIME,2)))
