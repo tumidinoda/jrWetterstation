@@ -7,6 +7,7 @@ from Adafruit_BMP import BMP085
 from jrPyCore.jrLogger import JrLogger
 
 LUFTDRUCKHOEHE = 166  # Hoehe Seyring
+RRDFILE = "/home/robert/jrWetterstation/db/jrWetter.rrd"
 
 
 class SensorKY052:
@@ -53,5 +54,5 @@ class SensorKY052:
     # =======================================================================================================================
     def save(self):
         # write values to round robin DB
-        rrdtool.update('jrWetter.rrd', 'N:%s:%s' % (self.actTemp, self.actPress))
+        rrdtool.update(RRDFILE, 'N:%s:%s' % (self.actTemp, self.actPress))
         self.my_logger.info("MyTemp: " + str(self.actTemp) + " MyPress: " + str(self.actPress))
