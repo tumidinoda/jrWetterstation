@@ -54,4 +54,4 @@ class KY015_Sensor:
     def save(self):
         # write values to round robin DB
         rrdtool.update('jrWetter.rrd', 'N:%s:%s' % (self.actTemp, self.actPress))
-        self.my_logger.info("Temp: " + str(self.actTemp) + " Press: " + str(self.actPress))
+        self.my_logger.info("MyTemp: " + str(self.actTemp) + " MyPress: " + str(self.actPress))
