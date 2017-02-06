@@ -2,7 +2,7 @@ import traceback
 
 from jrPyCore.jrLogger import JrLogger
 from jrPyCore.jrMail import JrMail
-from .sensor_K052 import SensorKY052
+from sensor_K052 import SensorKY052
 
 
 # ---------------------------------------------------------------------------------------------------------
