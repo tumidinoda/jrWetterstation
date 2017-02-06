@@ -1,14 +1,18 @@
 # -*- coding: UTF-8 -*-
-from logging import getLogger
-from time import sleep
 import rrdtool
-from jrMail import JrMail
+from time import sleep
+
+from Adafruit_BMP import BMP085
+
+from jrPyCore.jrLogger import JrLogger
+
+LUFTDRUCKHOEHE = 166  # Hoehe Seyring
 
 
 class KY015_Sensor:
     # =======================================================================================================================
     def __init__(self):
-        self.hoehe = 166  # Hoehe Seyring
+        self.hoehe = LUFTDRUCKHOEHE
         self.lastTemp = -99.0
         self.actTemp = -99.0
         self.minTemp = 99.9
@@ -18,19 +22,19 @@ class KY015_Sensor:
         self.minPress = 2000
         self.maxPress = 0.0
 
-        self.myLogger = getLogger('jrWetterstationLogger')
-        self.myLogger.debug('KY053 constructor started')
+        self.my_logger = JrLogger().get()
+        self.my_logger.debug('KY053 constructor started')
 
         retrytime = 1  # sec
-        while True:
+        while retrytime < 100:
             try:
                 # Sensor wird initialisiert
-                self.myLogger.debug('BMP085 initialisieren')
+                self.my_logger.debug('BMP085 initialisieren')
                 self.BMPSensor = BMP085.BMP085()
-                self.myLogger.debug('KY-053 sensor successful created')
+                self.my_logger.debug('KY-053 sensor successful created')
                 break
             except IOError:
-                self.myLogger.debug(
+                self.my_logger.debug(
                     'KY-053 sensor not detected. Check wiring. Try again in: ' + str(retrytime) + ' seconds')
                 print("KY-053 Sensor nicht erkannt!")
                 print("Ueberpruefen Sie die Verbindungen")
@@ -38,7 +42,7 @@ class KY015_Sensor:
                 sleep(retrytime)
                 retrytime *= 3
 
-        self.myLogger.debug('KY053 constructor ended')
+        self.my_logger.debug('KY053 constructor ended')
 
     # =======================================================================================================================
     def read(self):
@@ -58,30 +62,3 @@ class KY015_Sensor:
     def save(self):
         # write values to round robin DB
         rrdtool.update('jrWetter.rrd', 'N:%s:%s' % (self.actTemp, self.actPress))
-        # print cmd
-        # rrdtool.update(cmd)
-
-        # save only if diff greater than delta
-        deltaTemp = 0.5
-        if (self.actTemp < self.minTemp): self.minTemp = self.actTemp
-        if (self.actTemp > self.maxTemp): self.maxTemp = self.actTemp
-        if (self.actTemp < self.lastTemp - deltaTemp) or (self.actTemp > self.lastTemp + deltaTemp):
-            # eliminate jitter (diff > 10 degrees)
-            if abs(self.actTemp - self.lastTemp) < 10:
-                self.myLogger.info('TempChange: ' + str(self.actTemp) + ' Druck: ' + str(self.actPress))
-                # send Mail to Robert
-                myMail = JrMail()
-                myMail.sendTempMail(self.actTemp, self.minTemp, self.maxTemp)
-            else:
-                self.myLogger.debug(
-                    'Temperatur jitter: actTemp: ' + str(self.actTemp) + ' lastTemp: ' + str(self.lastTemp))
-            self.lastTemp = self.actTemp
-
-        deltaPress = 1
-        if (self.actPress < self.minPress): self.minPress = self.actPress
-        if (self.actPress > self.maxPress): self.maxPress = self.actPress
-        if (self.actPress < self.lastPress - deltaPress) or (self.actPress > self.lastPress + deltaPress):
-            self.myLogger.info('Temp: ' + str(self.actTemp) + ' DruckChange: ' + str(self.actPress))
-            self.lastPress = self.actPress
-            myMail = JrMail()
-            myMail.sendPressMail(self.actPress, self.minPress, self.maxPress)

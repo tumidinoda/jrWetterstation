@@ -80,7 +80,7 @@ class SensorKY052:
         if (self.actPress < self.minPress): self.minPress = self.actPress
         if (self.actPress > self.maxPress): self.maxPress = self.actPress
         if (self.actPress < self.lastPress - deltaPress) or (self.actPress > self.lastPress + deltaPress):
-            #            self.myLogger.info('Temp: '+str(self.actTemp)+' DruckChange: '+str(self.actPress))
+            #            self.my_logger.info('Temp: '+str(self.actTemp)+' DruckChange: '+str(self.actPress))
             self.lastPress = self.actPress
             # myMail=jrMail()
             # myMail.sendPressMail(self.actPress,self.minPress,self.maxPress)
