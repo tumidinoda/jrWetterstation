@@ -9,7 +9,7 @@ from jrPyCore.jrLogger import JrLogger
 LUFTDRUCKHOEHE = 166  # Hoehe Seyring
 
 
-class KY015_Sensor:
+class SensorKY052:
     # =======================================================================================================================
     def __init__(self):
         self.hoehe = LUFTDRUCKHOEHE
