@@ -28,9 +28,9 @@ press.set(lastPressValue)
 diffPress = lastPressValue - firstPressValue
 press.mod_status(diffPress)
 
-logMsg = ('Press: ' + str(lastPressValue) +
-          ' Diff: ' + str(round(diffPress,1)) +
+logMsg = ('Press: ' + str(round(lastPressValue, 1)) +
+          ' Diff: ' + str(round(diffPress, 2)) +
           " Average change per hour for last " +
           str(OBSERVATION_TIME) + " hours: " +
-          str(round(diffPress / OBSERVATION_TIME,2)))
+          str(round(diffPress / OBSERVATION_TIME, 2)))
 my_logger.info(logMsg)
