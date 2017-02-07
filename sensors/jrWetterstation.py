@@ -9,7 +9,7 @@ from sensor_K052 import SensorKY052
 def main():
     my_logger = JrLogger().get()
     try:
-        my_logger.info('Wetterstation gestartet')
+        my_logger.debug('Wetterstation gestartet')
         ky052 = SensorKY052()
         ky052.read()
         ky052.save()
