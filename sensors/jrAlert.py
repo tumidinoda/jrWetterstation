@@ -5,7 +5,7 @@ from jrPyCore.jrLogger import JrLogger
 
 # setup logging
 my_logger = JrLogger().get()
-my_logger.info("jrAlert started")
+my_logger.debug("jrAlert started")
 
 RDD_FILE = '/home/robert/jrWetterstation/db/jrWetter.rrd'
 OBSERVATION_TIME = 3  # time in hours
