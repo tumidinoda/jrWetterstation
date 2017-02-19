@@ -8,7 +8,7 @@ my_logger = JrLogger().get()
 my_logger.debug("jrAlert started")
 
 RDD_FILE = '/home/robert/jrWetterstation/db/jrWetter.rrd'
-OBSERVATION_TIME = 3  # time in hours
+OBSERVATION_TIME = 4  # time in hours
 
 observationStr = '-' + str(OBSERVATION_TIME) + 'hr'
 # rrdResult = rrdtool.fetch(RDD_FILE, 'AVERAGE', '-s -4hr')

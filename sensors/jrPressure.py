@@ -12,7 +12,7 @@ PRESS_REGNERISCH = 2
 PRESS_STURM = 3
 press_status = ('sonnig', 'bewoelkt', 'regnerisch', 'stuermisch')
 
-PRESS_DELTA_NORMAL = 2  # value in hPA per OBSERVATION_PERIOD
+PRESS_DELTA_NORMAL = 2  # value in hPA per OBSERVATION_PERIOD (=4h)
 PRESS_DELTA_STRONG = 4  # value for storm warning (same period as above)
 
 
